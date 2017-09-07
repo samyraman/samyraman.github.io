@@ -63,7 +63,7 @@ body {
   top: 600px;
   background: #fbddd0;
   width: 100%;
-  min-height: 1500px;
+  min-height: 1000px;
 }
   .content h1 {
     color: #3b1b3d;
@@ -71,12 +71,7 @@ body {
     text-transform: uppercase;
     text-align: center;
   }
-.topbar {
-    top: 0px;
-    z-index: 25;
-    background-image: url('topbar.png');
-    background-size: cover;
-}
+
 .navbar {
   position: fixed;
   top: 0px;
@@ -107,3 +102,103 @@ body {
 .navbar li a:hover {
     background-color: #111;
 }
+
+
+/*About me section contents*/
+#introtext {
+  padding: 5px;
+  width: 960px;
+  margin: 20px auto;
+  font-family: Montserrat;
+  line-height: 1.4;
+  color: #3b1b3d;
+  font-size: 1.05em;
+}
+
+#col1 {
+  width: 290px;
+  float: left;
+  padding: 5px 15px;
+}
+
+#col2 {
+  width: 294px;
+  float: left;
+  padding: 5px 15px;
+  margin: 0px 5px 5px 5px;
+}
+
+#col3 {
+  width: 270px;
+  padding: 5px 15px;
+  float: left;
+}
+
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+  
+  #introtext {
+    width: 94%;
+  }
+  #col1 {
+    width: 41%;
+    padding: 1% 4%;
+  }
+  #col2 {
+    width: 41%;
+    padding: 1% 4%;
+    margin: 0px 0px 5px 5px;
+    float: right;
+  }
+  
+  #col3 {
+    clear: both;
+    padding: 1% 4%;
+    width: auto;
+    float: none;
+  }
+
+}
+
+/* for 600px or less */
+@media screen and (max-width: 600px) {
+
+  #col1 {
+    width: auto;
+    float: none;
+  }
+  
+  #col2 {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+  }
+  
+  #col3 {
+    width: auto;
+    float: none;
+  }
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+  #col3 {
+    display: none;
+  }
+}
+
+#contact {
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  height: 200px;
+  background-color: #3b1b3d;
+  color: white;
+  padding: 40px 60px 0px 60px;
+}
+
