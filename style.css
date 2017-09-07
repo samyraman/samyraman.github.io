@@ -134,10 +134,30 @@ body {
   float: left;
 }
 
+#showcase{
+  margin-bottom: 100px;
+}
+
+#work1 {
+  width: 600px;
+  float: left;
+  padding: 5px 15px 5px 15px;
+  text-align: center;
+  margin-top: 130px;
+}
+#work2 {
+  width: 600px;
+  float: left;
+  padding: 5px 15px;
+  margin: 0px 5px 5px 5px;
+  text-align: center;
+}
+
 
 /************************************************************************************
 MEDIA QUERIES
 *************************************************************************************/
+
 /* for 980px or less */
 @media screen and (max-width: 980px) {
   
@@ -161,7 +181,21 @@ MEDIA QUERIES
     width: auto;
     float: none;
   }
+  #work1 {
+    width: 100%;
+    padding: 1% 4%;
+    text-align: center;
 
+  }
+  #work2 {
+    width: 100%;
+    padding: 1% 4%;
+    margin: 0px 0px 5px 5px;
+    text-align: center;
+    float: none;
+  }
+
+  
 }
 
 /* for 600px or less */
