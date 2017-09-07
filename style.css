@@ -30,25 +30,7 @@ body {
   .layer-1 {
     top: 110px;
     z-index: 5;
-    background-image: url('assets/5.png');
-    background-size: contain;
-  }
-  .layer-2 {
-    top: 110px;
-    z-index: 10;
-    background-image: url('assets/4.png');
-    background-size: contain;
-  }
-  .layer-3 {
-    top: 120px;
-    z-index: 15;
-    background-image: url('assets/3.png');
-    background-size: contain;
-  }
-  .layer-4 {
-    top: 115px;
-    z-index: 20;
-    background-image: url('assets/2.png');
+    background-image: url('assets/background.png');
     background-size: cover;
   }
   .layer-5 {
@@ -188,7 +170,7 @@ MEDIA QUERIES
 /* for 480px or less */
 @media screen and (max-width: 480px) {
   #col3 {
-    display: none;
+    float: none;
   }
 }
 
