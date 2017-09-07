@@ -192,3 +192,23 @@ MEDIA QUERIES
   }
 }
 
+.worktitle {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 160px;
+    font-weight: 700;
+    letter-spacing: -10px;
+    text-indent: -10px;
+}
+
+.link a {
+  background-image: linear-gradient(120deg, #532056 0%, #d95377 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+  color: inherit;
+  text-decoration: none;
+}
+.link a:hover {
+  background-size: 100% 1em;
+}
