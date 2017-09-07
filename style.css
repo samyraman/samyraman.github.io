@@ -30,7 +30,25 @@ body {
   .layer-1 {
     top: 110px;
     z-index: 5;
-    background-image: url('assets/background.png');
+    background-image: url('assets/5.png');
+    background-size: cover;
+  }
+  .layer-2 {
+    top: 110px;
+    z-index: 10;
+    background-image: url('assets/4.png');
+    background-size: contain;
+  }
+  .layer-3 {
+    top: 120px;
+    z-index: 15;
+    background-image: url('assets/3.png');
+    background-size: contain;
+  }
+  .layer-4 {
+    top: 115px;
+    z-index: 20;
+    background-image: url('assets/2.png');
     background-size: cover;
   }
   .layer-5 {
