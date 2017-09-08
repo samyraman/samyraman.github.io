@@ -2,15 +2,16 @@ body {
   background: #fbddd0;
   margin: 0;
   font-family: Oswald;
+  overflow-x: hidden;
 }
 .parallax-container {
   position: fixed;
   overflow: visible;
-  width: 100%;
+  width: 100vw;
   height: 850px;
 }
 .parallax-layer {
-  width: 100%;
+  width: 100vw;
   height: 500px;
   position: fixed;
   left: 0;
@@ -66,7 +67,7 @@ body {
   position: absolute;
   top: 600px;
   background: #fbddd0;
-  width: 100%;
+  width:100vw;
   min-height: 1000px;
 }
   .content h1 {
@@ -84,7 +85,7 @@ body {
 .navbar {
   position: fixed;
   top: 0px;
-  width: 100%;
+  width: 100vw;
   display: none;
 }
 .navbar ul {
@@ -224,7 +225,9 @@ MEDIA QUERIES
     width: auto;
     float: none;
   }
-
+  .footer-text {
+    width: 95vw;
+  }
 }
 
 /* for 480px or less */
@@ -236,7 +239,7 @@ MEDIA QUERIES
 
 .worktitle {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 160px;
+    font-size: 13vw;
     font-weight: 700;
     letter-spacing: -10px;
     text-indent: -10px;
@@ -272,8 +275,8 @@ footer {
 
 .footer-text {
   padding: 5px;
-  width: 960px;
-  margin: 20px auto;
+  width: 30vw;
+  margin: 20px;
   font-family: Montserrat;
   line-height: 1.4;
   color: #FFFFFF;
