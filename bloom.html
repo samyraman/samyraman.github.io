@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Samyukta Raman</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 550) {
+        $(".navbar").slideDown();
+      } else {
+        $(".navbar").slideUp();
+      }
+    });
+  });
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="parallax-container">
+    <div class="parallax-layer title" data-parallax-speed="0.1" data-max-scroll="565">SAMYUKTA RAMAN</div>
+    <div class="parallax-layer layer-1" data-parallax-speed="0.2" data-max-scroll="565"></div>
+    <div class="parallax-layer layer-2" data-parallax-speed="0.3" data-max-scroll="565"></div>
+    <div class="parallax-layer layer-3" data-parallax-speed="0.5" data-max-scroll="565"></div>
+    <div class="parallax-layer layer-4" data-parallax-speed="0.7" data-max-scroll="565"></div>
+    <div class="parallax-layer layer-5" data-parallax-speed="0.9" data-max-scroll="565"></div>
+  </div>
+
+  <div class="content">
+    <div class="navbar">
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="topbar"><img src="assets/topbar.png" width="100%" width= "100vw"></div>
+    <div id="about">
+      <h1 class="large"><span class="underline">Bloom</span></h1>
+      <h2>Mobile Web Application</h2>
+      <div class="center"><img src="assets/bloomheroimage.png" width="60%"></div>
+      <div id="introtext" class="clearfix">
+        <section class="col1 clearfix">
+          <p class="center"><img src="assets/bloomicon.png" alt="Bloom logo" width="30%"></p>
+          <p><em>In our world, where we often lack meaningful connections in our day-to-day lives and even more so, a lack of understanding of how others see the world, we hope to create an application that creates more meaningful connections seamlessly.</em></p>
+        </section>
+  
+        <section class="col2 clearfix">
+          <p><strong>Bloom</strong> is a group effort with some of the greatest people I've ever worked with! We knew we wanted to emulate an interaction reminiscent of a space such as a coffee shop where the main focus is interacting with your physical location, and thus by extension, with the people around you. </p>
+          <p>We thought about the physical experience of leaving your mark behind (<em>by carving your initials into a wooden bench, perhaps?</em>) and of coming across someone else's mark days (<em>weeks? months? years?</em>) later and wondering what that person was thinking in the moment.</p>
+          <p>And that was how <strong>Bloom</strong> came about! </p>
+        </section>
+
+        <aside class="col3 clearfix">
+          <p>We realized that there are many people who frequent specific locations every day and enjoy community, but seem to find something lacking in their lives. With <strong>Bloom</strong>, users can create mementos, nicknamed <em>"seeds"</em>, of either text, drawing, photos, or videos. As they go about their day, they may find community gardens, where they can drop their seed anonymously and view the seeds created by other users. This creates an anonymous community where users can leave small mementos from their lives, inspire and impact others, and grow as people themselves.</p>
+        </aside>
+      </div>
+    </div>
+
+    <div id="introtext" class="clearfix">
+        <section class="col1 clearfix">
+          <h2 class="underline">Technology:</h2>
+          <p>As a web app, <strong>Bloom</strong> was built using the <u>Ruby on Rails</u> framework. </p>
+          <p>On the front end, we experimented with various <u>JavaScript</u> libraries and plugins, and we also played around with drawing fractal trees on HTML5 canvases when we planted our seeds.</p>
+          <p>Then, we bound a user's seed to their seed location the <u>Google Maps API</u> and utilized <u>Active Record</u> to query the database for our seed messages.</p>
+          <div class="center"><button onclick="window.open('https://github.com/samyraman/Bloom')" type="button" class="github">View on GitHub</button></div>
+        </section>
+  
+        <section class="col2 clearfix">
+          <p class="center"><img src="assets/bloomscreen1.png" width="85%" alt="Google Maps API"></p>
+        </section>
+
+        <aside class="col3 clearfix">
+          <p class="center"><img src="assets/bloomscreen2.png" width="93%" alt="Seeds display messages"></p>
+
+        </aside>
+    </div>
+    <div class="back"><span class="link"><a href="index.html#work">See the rest of my work</a></span></div>
+
+
+    <div id="contact">
+      <footer class="page-footer">
+        <div class="footer-text">
+          <span class="footer-title">Get in touch!</span>
+          <p>I'd love to hear from you! Feel free to shoot me an email at <span class="link"><a href="mailto:sraman@berkeley.edu">sraman@berkeley.edu</a></span></p>
+          <p>
+            <a href="https://github.com/samyraman" target="_blank"><img src="assets/github.png" alt="GitHub" width="30px"> </a>
+            <a href="https://www.linkedin.com/in/samyuktaraman/" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn" width="30px"> </a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+
+  <script src="parallax.js"></script>
+  
+
+</body>
+</html>
