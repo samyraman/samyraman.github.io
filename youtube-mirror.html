@@ -35,45 +35,47 @@
   <div class="content">
     <div class="navbar">
       <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#work">Work</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
     <div class="topbar"><img src="assets/topbar.png" width="100%" width= "100vw"></div>
     <div id="about">
-      <h1>Hello!</h1>
-      
+      <h1 class="large"><span class="underline">YouTube Mirror</span></h1>
+      <h2>Web Application</h2>
+      <div class="center"><img src="assets/mirror.png" width="70%"></div>
       <div id="introtext" class="clearfix">
         <section class="col1 clearfix">
-          <img src="assets/samyukta.png" width="100%" alt="It's me!">
+          <p>The <strong>YouTube Mirror</strong> was a fun little project! I have often found myself in the awkward position of swiveling back and forth between my makeup mirror and my laptop with a makeup video open, trying to follow along with the tutorial. This app aims to eliminate that struggle by combining the two into one easy to use screen. </p></p>
         </section>
   
         <section class="col2 clearfix">
-          <p>My name is Samyukta, but my friends call me Samy. I’m a 4th year undergraduate at UC Berkeley studying <strong>Computer Science</strong> and <strong>Integrative Biology</strong>. I came into college intending to study developmental genetics but once I took my first CS class, I was hooked! Computer Science challenges me to think hard about things and actually <em>find</em> solutions to problems, and I love the creativity it inspires in me!</p>
+          <p>In this app, you can load a video of your choice into the top right corner of the screen. Your webcam serves as your mirror, making it easy to see your face and the video at the same time without having to go back and forth between the two. </p>
         </section>
 
         <aside class="col3 clearfix">
-          <p>When I’m not in class or frantically finishing a problem set, I like to design things too. Doodling used to be a hobby of mine, but now I’ve extended my scope to cover digital media and it’s been a whole lot of fun! <span class="link"><a href="#work">Check out my work</a></span> or reach out and <span class="link"><a href="#contact">say hi!</a></span></p>
+          <p>You can also easily control the video using your smartphone as a wand. Simply move your phone forward to play, move it back to pause, and roll it to the left or right to rewind or forward the video by 15 seconds. Putting on makeup just became a lot more fun!</p>
         </aside>
       </div>
     </div>
-    <div id="work">
-      <h1>My Work</h1>
-      <div class="showcase clearfix">
-        <div class="work1"><span class="worktitle link"><a href="bloom.html">Bloom</a></span> <h2>Mobile web development</h2></div>
-        <div class="work2"><img src="assets/bloomscreen.png" width="50%"></div>
-      </div>
-      <div class="showcase clearfix">
-        <div class="work2"><img src="assets/youtubemirror.png" width="100%"></div>
-        <div class="work2"><span class="worktitle link"><a href="youtube-mirror.html">YouTube Mirror</a></span> <h2>Web development</h2></div>
-      </div>
-      <div class="showcase clearfix">
-        <div class="work2"><span class="worktitle link"><a href="#">Galactic Weather App</a></span> <h2>UI Design</h2></div>
-        <div class="work2"><img src="assets/weatherapp.png" width="50%"></div>
-      </div>
+
+    <div id="introtext" class="clearfix">
+        <section class="col1 clearfix">
+          <h2 class="underline">Technology:</h2>
+          <p>As a web app, the <strong>YouTube Mirror</strong> was built using the <u>Ruby on Rails</u> framework. </p>
+          <p>On the front end, we loaded a webcam video feed onto the screen and embedded a video at the top.</p>
+          <p>Then, we opened a <u>WebSockets</u> connection between the mirror (your laptop) and the wand (your smartphone) in order to transmit the smartphone's <u>orientation and motion data</u>, which we used to interpret certain wand gestures and then bind them to their corresponding actions.</p>
+          <div class="center"><button onclick="window.open('https://github.com/samyraman/YoutubeMirror')" type="button" class="github">View on GitHub</button></div>
+        </section>
+  
+        <section class="video clearfix">
+          <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/h7kkCt0kLBs" frameborder="0" allowfullscreen></iframe></div>
+        </section>
+
     </div>
+    <div class="back"><span class="link"><a href="index.html#work">See the rest of my work</a></span></div>
 
 
     <div id="contact">
