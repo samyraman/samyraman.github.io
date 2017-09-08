@@ -8,6 +8,10 @@
   <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.min.js"></script>
+   <script>
+    jQuery(".worktitle").fitText({ maxFontSize: '160px' });
+  </script>
   <script>
   $(document).ready(function(){
     $(window).scroll(function() {
@@ -35,33 +39,62 @@
   <div class="content">
     <div class="navbar">
       <ul>
-        <li><a class="active" href="index.html">Home</a></li>
+        <li><a class="active" href="#">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
     <div class="topbar"><img src="assets/topbar.png" width="100%" width= "100vw"></div>
     <div id="about">
       <h1>Hello!</h1>
       
-      <div id="introtext">
-        <section id="col1">
+      <div id="introtext" class="clearfix">
+        <section class="col1 clearfix">
           <img src="assets/samyukta.png" width="100%" alt="It's me!">
         </section>
   
-        <section id="col2">
+        <section class="col2 clearfix">
           <p>My name is Samyukta, but my friends call me Samy. I’m a 4th year undergraduate at UC Berkeley studying <strong>Computer Science</strong> and <strong>Integrative Biology</strong>. I came into college intending to study developmental genetics but once I took my first CS class, I was hooked! Computer Science challenges me to think hard about things and actually <em>find</em> solutions to problems, and I love the creativity it inspires in me!</p>
         </section>
 
-        <aside id="col3">
-          <p>When I’m not in class or frantically finishing a problem set, I like to design things too. Doodling used to be a hobby of mine, but now I’ve extended my scope to cover digital media and it’s been a whole lot of fun! <span class="link"><a href="work.html">Check out my work</a></span> or reach out and <span class="link"><a href="contact.html">say hi!</a></span></p>
+        <aside class="col3 clearfix">
+          <p>When I’m not in class or frantically finishing a problem set, I like to design things too. Doodling used to be a hobby of mine, but now I’ve extended my scope to cover digital media and it’s been a whole lot of fun! <span class="link"><a href="#work">Check out my work</a></span> or reach out and <span class="link"><a href="#contact">say hi!</a></span></p>
         </aside>
-
+      </div>
+    </div>
+    <div id="work">
+      <h1>My Work</h1>
+      <div class="showcase clearfix">
+        <div class="work1"><span class="worktitle link"><a href="#">Bloom</a></span> <h2>Mobile web development</h2></div>
+        <div class="work2"><img src="assets/bloomscreen.png" width="50%"></div>
+      </div>
+      <div class="showcase clearfix">
+        <div class="work2"><img src="assets/youtubemirror.png" width="100%"></div>
+        <div class="work2"><span class="worktitle link"><a href="#">YouTube Mirror</a></span> <h2>Web development</h2></div>
+      </div>
+      <div class="showcase clearfix">
+        <div class="work2"><span class="worktitle link"><a href="#">Galactic Weather App</a></span> <h2>UI Design</h2></div>
+        <div class="work2"><img src="assets/weatherapp.png" width="50%"></div>
       </div>
     </div>
 
+
+    <div id="contact">
+      <footer class="page-footer">
+        <div class="footer-text">
+          <span class="footer-title">Get in touch!</span>
+          <p>I'd love to hear from you! Feel free to shoot <br>me an email at <span class="link"><a href="mailto:sraman@berkeley.edu">sraman@berkeley.edu</a></span></p>
+          <p>
+            <span class="link"><a href="https://github.com/samyraman" target="_blank"><img src="assets/github.png" alt="GitHub" width="30px"> </a></span>
+            <span class="link"><a href="https://www.linkedin.com/in/samyuktaraman/" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn" width="30px"> </a></span>
+          </p>
+        </div>
+      </footer>
+    </div>
   </div>
+
+
 
   <script src="parallax.js"></script>
   

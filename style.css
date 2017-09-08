@@ -58,6 +58,10 @@ body {
     background-size: cover;
   }
 
+.topbar {
+  z-index: 500;
+}
+
 .content {
   position: absolute;
   top: 600px;
@@ -69,6 +73,11 @@ body {
     color: #3b1b3d;
     font-size: 2em;
     text-transform: uppercase;
+    text-align: center;
+  }
+  .content h2 {
+    color: #3b1b3d;
+    font-size: 1.3em;
     text-align: center;
   }
 
@@ -98,7 +107,7 @@ body {
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
+/* Change the link color to black on hover */
 .navbar li a:hover {
     background-color: #111;
 }
@@ -115,44 +124,48 @@ body {
   font-size: 1.05em;
 }
 
-#col1 {
+.col1 {
   width: 290px;
   float: left;
   padding: 5px 15px;
 }
 
-#col2 {
+.col2 {
   width: 294px;
   float: left;
   padding: 5px 15px;
   margin: 0px 5px 5px 5px;
 }
 
-#col3 {
+.col3 {
   width: 270px;
   padding: 5px 15px;
   float: left;
 }
 
-#showcase{
+.showcase{
   margin-bottom: 100px;
 }
 
-#work1 {
-  width: 500px;
+.work1 {
+  width: 50%;
   float: left;
-  padding: 5px 15px 5px 15px;
   text-align: center;
   margin-top: 130px;
 }
-#work2 {
-  width: 500px;
+.work2 {
+  width: 50%;
   float: left;
-  padding: 5px 15px;
-  margin: 0px 5px 5px 5px;
   text-align: center;
 }
 
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
 
 /************************************************************************************
 MEDIA QUERIES
@@ -164,34 +177,29 @@ MEDIA QUERIES
   #introtext {
     width: 94%;
   }
-  #col1 {
+  .col1 {
     width: 41%;
     padding: 1% 4%;
   }
-  #col2 {
+  .col2 {
     width: 41%;
     padding: 1% 4%;
     margin: 0px 0px 5px 5px;
     float: right;
   }
   
-  #col3 {
+  .col3 {
     clear: both;
     padding: 1% 4%;
     width: auto;
     float: none;
   }
-  #work1 {
+  .work1 {
     width: 100%;
-    padding: 1% 4%;
-    text-align: center;
-
+    float: none;
   }
-  #work2 {
+  .work2 {
     width: 100%;
-    padding: 1% 4%;
-    margin: 0px 0px 5px 5px;
-    text-align: center;
     float: none;
   }
 
@@ -201,18 +209,18 @@ MEDIA QUERIES
 /* for 600px or less */
 @media screen and (max-width: 600px) {
 
-  #col1 {
+  .col1 {
     width: auto;
     float: none;
   }
   
-  #col2 {
+  .col2 {
     width: auto;
     float: none;
     margin-left: 0px;
   }
   
-  #col3 {
+  .col3 {
     width: auto;
     float: none;
   }
@@ -221,7 +229,7 @@ MEDIA QUERIES
 
 /* for 480px or less */
 @media screen and (max-width: 480px) {
-  #col3 {
+  .col3 {
     float: none;
   }
 }
@@ -245,4 +253,33 @@ MEDIA QUERIES
 }
 .link a:hover {
   background-size: 100% 1em;
+}
+
+#work {
+  margin-top: 200px;
+}
+
+footer { 
+    display: block;
+    height: 200px;
+}
+
+.page-footer {
+  background-color: #3b1b3d;
+  color: #FFFFFF;
+  padding: 20px 40px 20px 40px;
+}
+
+.footer-text {
+  padding: 5px;
+  width: 960px;
+  margin: 20px auto;
+  font-family: Montserrat;
+  line-height: 1.4;
+  color: #FFFFFF;
+  font-size: 1.05em;
+}
+.footer-title {
+  font-family: Oswald;
+  font-size: 1.3em;
 }
