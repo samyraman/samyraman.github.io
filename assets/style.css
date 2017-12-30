@@ -4,6 +4,7 @@
 .hero-body {
 	padding: 0px;
 	text-align: center;
+	overflow-x: hidden;
 }
 .hero-body img{
 	max-height: 95%;
@@ -22,6 +23,7 @@ body {
 	color: #54a0f2;
 	padding: 20px;
 	font-size: 105%;
+	overflow-x: hidden;
 }
 strong {
 	color: #54a0f2;
