@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Samyukta Raman</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.css" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Rozha+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/style.css" />
+  <script src="https://use.fontawesome.com/b0894740c0.js"></script>
+</head>
+
+<body>
+	<section class="hero">
+   <div class="hero-head">
+    <nav class="navbar header-link" role="navigation" aria-label="main navigation">
+     <div class="navbar-brand">
+      <a href="index.html" data-hover="Home">Home</a>
+      <div class="navbar-burger burger" data-target="navMenu" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+       <span></span>
+       <span></span>
+       <span></span>
+     </div>
+   </div>
+   <div id="navMenu" class="navbar-menu">
+    <div class="navbar-end">
+     <a href="about.html" data-hover="About">About</a>
+     <div class="navbar-end">
+       <a href="#contact" data-hover="Contact">Contact</a>
+     </div>
+   </div>
+ </div>
+</nav>
+</div>
+</section>
+<div class="container content">
+  <div class="columns">
+   <div class="column title">Where2Eat</div>
+ </div>
+ <div class="columns"><div class="column"><h2>Image-based machine learning restaurant recommendations</h2></div></div>
+ <div class="columns">
+   <div class="column center title-img"><img src="assets/images/where2eat/main-screen.png" width="60%"></div>
+ </div>
+
+ <div class="columns"><div class="column center"><h2><span class="underline">Overview</span></h2></div></div>
+
+ <div class="columns">
+  <div class="column is-1"></div>
+  <div class="column">
+   <p><i>We have a problem.</i></p>
+   <p>We don't know where to eat next and we want to develop a unique solution to this problem. Thus we decided on a fully image-based (as opposed to search-based) recommendation web application that uses image recognition and machine learning to classify photos of food and learn what the user likes.</p>
+   <p>No need for typing or searching. Just click and go. </p>
+   <p><i>We no longer have a problem.</i></p></div>
+
+   <div class="column">
+     <p>This idea came about at CalHacks, one of the largest hackathons in the world.</p> 
+     <p>My team and I were brainstorming ideas for applications we would use and realized that we would love a restaurant recommendation service. As opposed to Yelp, where we manually search up what we're in the mood for to get reccomendations accordingly, Where2Eat would automatically suggest a restaurant from your preferred cuisine and within your ideal price range.</p></div>
+
+     <div class="column">
+      <p>We used Microsoft's computer vision custom AI to classify pictures of food. We labeled images of food with tags and used these labels to develop an ML model for the user using Synaptic, a JavaScript ML library.</p>
+      <p>The machine would then use images of restaurants' foods and suggest the restaurant with the highest score according to the user's ML model.</p></div>
+      <div class="column is-1"></div>
+    </div>
+
+    <div class="columns"><div class="column center"><h2><span class="underline">Technology</span></h2></div></div>
+
+    <div class="columns is-centered">
+      <div class="column is-1"></div>
+      <div class="column">
+        <h3>Technologies Used:</h3>
+        <ol>
+          <li>NodeJS</li>
+          <li>MongoDB (MLAB)</li>
+          <li>Express</li>
+          <li>React or AngularJS</li>
+          <li>Synaptic (Machine Learning JavaScript Library)</li>
+          <li>Microsoft Computer Vision CustomAI (Machine Learning Image Recognition)</li>
+          <li>GooglePlacesAPI</li>
+        </ol>
+        <h3>How?</h3>
+        <ol><li>Use machine learning to predict what restaurants the user would like to try in a new area based off of:</li>
+         <ul>
+           <li>Images the user selects - we use preclassified images to lower processing load on Microsoft</li>
+           <li>From these labels, we form a model and import images from random restaurants</li>
+           <li>Use <strong>Microsoft customAI</strong> image recognition to label the images</li>
+           <li>Choose a restaurant based on label/model score with <strong>Synpatic</strong> JS ML</li>
+           <li>Improve model with user feedback</li>
+           <li>Store user models in MongoDB through <strong>MLAB</strong></li>
+         </ul>
+         <li>Front End User-Flow</li>
+         <ul>
+           <li>3x3 grids of photos for preference building and model initiation</li>
+           <ul>
+             <li>Users can keep picking photos</li>
+             <li>This data trains our neural network</li>
+             <li>Users can indicate diet preferences (vegetarian/vegan) (allergies optional)</li>
+             <li>Users can return to this at anytime to update their preferences</li>
+           </ul>
+           <li>Machine then gives suggestions</li>
+           <ul>
+             <li>Show multiple photos</li>
+             <li>Show Name</li>
+             <li>Show location on map</li>
+             <li>Show Reviews from (GoogleAPI - net yet implemented)</li>
+           </ul>
+           <li>Possible Responses:</li>
+           <ul>
+             <li>Go there! (validates machine)</li>
+             <li>Maybe another time (validates machine)</li>
+             <li>Nah (invalidates machine)</li>
+           </ul>
+         </ul>
+         <li>Restaurants can be saved (optional)</li>
+         <ul>
+           <li>User can create custom lists. For example: "dessert/authentic/etc"</li></ul>
+           <li>Can predict for multiple people (optional)</li>
+           <ul><li>User can add friends and the app will use their data as well for group decisions</li></ul>
+         </ol>
+         <div class="center">
+          <a href="https://github.com/HaoNLe/CalHacks4.0" target="_blank" class="animated-button github-button">View on GitHub</a> </div>
+        </div>
+        <div class="column is-1"></div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="columns" id="contact">
+  <div class="column"><img src="assets/images/getintouch.png" width="15%" alt="Get in Touch"><br>
+    I'd love to hear from you! Feel free to shoot <br> me an email at <span class="footer-link"><a href="mailto:sraman@berkeley.edu">sraman@berkeley.edu</a></span>
+    <br><a href="https://github.com/samyraman" target="_blank"><img src="assets/images/github.png" alt="GitHub" width="33px" class="footer-img"> </a> 
+    <a href="https://www.linkedin.com/in/samyuktaraman/" target="_blank"><img src="assets/images/linkedin.png" alt="LinkedIn" width="33px" class="footer-img"> </a>
+  </div>    
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="assets/javascript.js"></script>
+</body>
+</html>

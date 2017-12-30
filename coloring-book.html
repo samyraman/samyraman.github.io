@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Samyukta Raman</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.css" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Rozha+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/style.css" />
+  <script src="https://use.fontawesome.com/b0894740c0.js"></script>
+</head>
+
+<body>
+	<section class="hero">
+   <div class="hero-head">
+    <nav class="navbar header-link" role="navigation" aria-label="main navigation">
+     <div class="navbar-brand">
+      <a href="index.html" data-hover="Home">Home</a>
+      <div class="navbar-burger burger" data-target="navMenu" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+       <span></span>
+       <span></span>
+       <span></span>
+     </div>
+   </div>
+   <div id="navMenu" class="navbar-menu">
+    <div class="navbar-end">
+     <a href="about.html" data-hover="About">About</a>
+     <div class="navbar-end">
+     <a href="#contact" data-hover="Contact">Contact</a>
+     </div>
+   </div>
+ </div>
+</nav>
+</div>
+</section>
+<div class="container content">
+  <div class="columns">
+   <div class="column title">Interactive Coloring Book</div>
+ </div>
+ <div class="columns"><div class="column"><h2>A Web Application</h2></div></div>
+ <div class="columns">
+   <div class="column center title-img"><img src="assets/images/coloringbook/gradient.gif" width="55%"></div>
+ </div>
+
+ <div class="columns"><div class="column center"><h2><span class="underline">Overview</span></h2></div></div>
+
+ <div class="columns">
+  <div class="column is-1"></div>
+  <div class="column">
+   <p>The idea behind the <strong>Interactive Coloring Book</strong> was to create a fun yet practical coloring application for tablet users. Many coloring book apps exist on the market, but I wanted to design one that felt natural to the user, making the process as hassle-free as possible.</p>
+   <p>Built with the Ruby on Rails framework, I was also able to experiment heavily with Paper.js, a vector graphics scripting framework. </div>
+
+     <div class="column">
+       <p>This coloring book creates a seamless experience by allowing users to toggle between two modes that let them click a region to fill it or manually color it in. </p>
+       <p>It also provides users with a recently used color palette to speed up user flow and eliminate the hassle of trying to find previously used colors.</p>
+       <p>I also played around with creating a gradient fill tool.</p></div>
+
+       <div class="column">
+        <p>In order to make the user experience as smooth as possible, I tried to adhere to Resnick et al.'s <span class="text-link"><a href="https://www.cs.umd.edu/hcil/CST/Papers/designprinciples.pdf" target="blank">Design Principles for Tools to Support Creative Thinking</a></span>, a set of design principles meant to help people express themselves creatively
+          and to develop as creative thinkers.</p>
+          <p>These principles aim to help users be more productive and innovative, which was one of my goals in creating this app.</p></div>
+          <div class="column is-1"></div>
+        </div>
+
+        
+        <div class="columns"><div class="column center"><h2><span class="underline">Design Process</span></h2></div></div>
+        <div class="columns">
+         <div class="column is-1"></div>
+         <div class="column"><h3>Task Analysis & User Study</h3>
+           To find out how users color, we conducted an observational study with users from different artistic backgrounds, aiming to understand their thought process while coloring using an existing iPad coloring app. We were able to gain the following observational insights:
+           <ol>
+            <li><strong><u>Personal Connection</u></strong><br>
+              Users tend to choose images that they have a personal connection to. They want to color images that they already have a mental image of or can picture what they would like it to look like. </li><br>
+              <li><strong><u>Perceived Affordance of a Coloring Book</u></strong><br>
+                Users want coloring on an iPad to be as easy (if not easier) than coloring in real life. As a result, users seemed to prefer coloring in real life. They can easily switch between pencils/markers, they can control shading and patterns themselves, and can color outside of the borders if they choose. They have more fine-grained control when coloring in real life and miss this freedom when using a digital interface.</li>
+                <br>
+                <li><strong><u>Perception of Realism</u></strong><br>Users wanted to color their picture realistically but explored their creativity with colors within the acceptable range of realistic color choices. Their choice of color was as much dependent on how well they could use the color menu as it was on their personal preference.</li>
+                <br>
+                <li><strong><u>Sticky Menu Options</u></strong><br>
+                  Users had the option to choose a solid color fill, gradient fill, pattern fill, or draw with crayons. Users stuck with the option they chose initially – if they chose a solid fill first, they filled in the entire image with solid colors. None of the users considered using crayons or patterns and preferred the simple color options.</li>
+                  <br>
+                  <li><strong><u>Mistake Behavior</u></strong><br>
+                    Users were more likely to make mistakes coloring digitally than on paper. When they made a mistake, users became agitated and initially did not consider exploring menu options to revert their mistake. Some users did not realize they could double tap to un-color a region or that there was a undo button.</li>
+                  </ol>
+
+                  <h3>Interaction Sketches</h3>
+                  Based on the ideas I noticed during my user study, I began playing around with a few interaction sketches.<br>
+
+                  <p>For my first sketch, I built off the fact that one of the users we interviewed said it would help to have a suggested colors option. He was coloring a picture of the sky and said everyone knows the sky is blue so it would be nice to see blue as an option immediately without having to select it. To accommodate this, I added suggested color palettes that pop up when an image is selected based on the contents of that image.</p>
+                  <div class="center"><strong><u>Sketch #1</u></strong></div>
+                  <div class="column center"><img src="assets/images/coloringbook/sketch1.png" width="60%"></div><br>
+
+                  <p>For my second sketch, I built off the fact that users we interviewed liked the perceived affordances of a coloring book. They wanted it to mimic an actual physical coloring book as much as possible, so I created an option for them to choose their medium. Once chosen, they are taken to the coloring page where they see the color options in the actual form of the medium they have chosen (ex. Colored pencils at the bottom of the screen). Using these, thy can further refine their colors by choosing a shade.</p>
+                  <div class="center"><strong><u>Sketch #2</u></strong></div>
+                  <div class="column center"><img src="assets/images/coloringbook/sketch2.png" width="40%"></div><br>
+
+                  <p>My third sketch was rather simplistic overall, but I made it somewhat like a game in giving users options to choose their difficulty level. The users we interviewed, based on their demographic, either liked the fact that you could tap a region to fill it with a color, or disliked it because they wanted to color it in themselves. This function gives them the option to choose so that both types of users will be able to use this app.</p>
+                  <div class="center"><strong><u>Sketch #3</u></strong></div>
+                  <div class="column center"><img src="assets/images/coloringbook/sketch3.png" width="30%"></div><br>
+
+                  <h3>Paper Prototyping</h3>
+                  <p>In my initial paper prototype, I ended up going with a combination of all my previous sketches. I implemented the “choose an image” screen from sketch 1. Then, I combined elements from 2 and 3 for the rest of the app. Once a user clicks the image of their choice, it comes up with an option to choose beginner mode (tapping a region to color it) or expert mode (manually coloring it). This was taken from sketch 3. Then, once a user selects their mode, they can choose a medium (crayons, pencils, or paint). This was taken from sketch 2. Then the user is taken to the coloring screen, where the palette shows up at the bottom of the screen in the form of a physical palette of crayons, paints, etc.</p>
+
+
+                  <div class="center"><strong><u>Paper Prototype Interaction</u></strong></div>
+                  <div class="column center"><img src="assets/images/coloringbook/paperprototype.gif" width="60%"></div><br>
+
+                  <h3>Hi-fi prototype</h3>
+                  <p>In my final prototype, I ended up making quite a few significant changes to my paper prototype. Firstly, I was unable to implement my “choose your medium” interaction because it was not within the scope of Paper.js. I had initially relied on filling in each region with a different texture (a rough one for the crayon, a smoother one for pencils, and a plain one for paint). However, it was only after I started coding the project that I realized that Paper.js in its current version does not support textures. As far as I know, this is a feature they are planning to roll out in a future version, but currently, I could not find a way to do it. This changed the way I was going to approach my project since I couldn’t have the users pick their medium as I had initially hoped.</p>
+
+                  <p>This in turn affected how I organized my color palette too because my initial design had been a skeuomorph of a physical coloring book. If I were to go down that route, I would have to take care to make sure that our app included everything a user would expect from an actual physical coloring book. My initial design complied with this because I allowed users to choose their medium, as they would in a physical book. Once chosen, the color palette would also show up in that form (i.e. crayons at the bottom of the screen if they picked crayons, paint tubes if they picked paint). This would emulate a physical interaction since a user would actually have those crayons/pencils/paints laid out. Furthermore, my design allowed users to drag their crayons around the screen to emulate how in a physical interaction, a user could hold certain crayons in their hand, place them wherever they wanted, etc. Since I couldn’t change the medium, I was wary of depicting the color palette as actual crayons, since as we talked about in lecture, the users would be expecting something and receive something different. Instead, I decided (rather late in the game) to drop the skeuomorph idea and try something that was less like a physical coloring book.</p>
+
+                  <div class="column center"><img src="assets/images/coloringbook/coloringbook.gif" width="60%"></div><br>
+
+                  <p>My initial design had a screen that allowed user to pick their medium and their difficulty level but since the medium portion of the project was removed, I didn’t think it would be convenient for users to be taken to a separate screen solely to choose their difficulty level, since that was something that could easily be placed on the side unobtrusively. So I ended up getting rid of that screen entirely and bringing the user straight to the coloring page, with the recently used color palette on the left as originally planned, and the difficulty toggle switch on the right instead of on its own page. I thought this might help maximize user flow since they would be able to switch easily between the two modes and not have to go to a separate screen every time just to do so.</p>
+
+                  <h3>User Testing</h3>
+                  <p>After building my application, I tested it with 2 users to see where I could potentially improve.
+
+                    <br><br><strong><u>User 1:</u></strong> 
+                    <p>User 1 is not particularly a coloring enthusiast. The last time he colored was probably 10 years ago, and as a child he enjoyed using crayons. When he started coloring, he immediately started tapping regions to fill them in (easy mode). He started around the center of the mandala and moved outwards in a circular manner. He said that he picked colors randomly and didn’t think about it before, but kept the colors same for each identical region in the mandala.</p>
+                    <p>He liked the recently used color panel and thought it was especially useful when he was trying to switch between the two shades of orange in the circles. Since they were so similar, it would have been hard to select the exact shade, so he really appreciated having them show up on the side. Halfway through the interaction, he saw the mode toggle button and decided to try the hard mode. He was wary of ruining his drawing and just wanted to test it out, so he scribbled a little bit on the side. Immediately after, he wanted to undo it and go back to easy mode, but he couldn’t find an undo button. That was one thing that he said he really would have liked to see, because he felt the random scribble on the side ruined his drawing.</p>
+                    <div class="center"><strong><u>User 1's drawing:</u></strong></div>
+                    <div class="column center"><img src="assets/images/coloringbook/user1.png" width="60%"></div>
+
+                    <br><br><strong><u>User 2:</u></strong> 
+                    <p>User 2 is not a huge coloring enthusiast either. He last colored about two years ago on one of the kid’s menus at a chain restaurant. He also enjoyed coloring with crayons when he was younger. User 2 began coloring in easy mode. He planned out his drawing in the sense that he wanted to color every region that used the same color at the same time, so he wouldn’t have to keep switching back and forth between colors.</p>
+                    <p>Midway through the drawing, he decided to switch to hard mode. The first thing he noticed was that there was no way to tell how big the brush size was, so he had to actually use it to figure it out. He said it would have been nice to have the cursor be a circle roughly the size of the brush so that users can see how it would look (similar to some other drawing apps). When he started using the brush, he also realized that it colors over the black lines. This really threw him off and he didn’t finish coloring the rest of the page.</p>
+                    <div class="center"><strong><u>User 2's drawing:</u></strong></div>
+                    <div class="column center"><img src="assets/images/coloringbook/user2.png" width="60%"></div>
+
+
+                    <h3>Reflection on Ways to Improve</h3>
+                    This user test was extremely helpful because immediately, a couple of things popped up that I knew I would definitely have to change before rolling out a final iteration of this app. First of all, there was no undo button, which definitely made the whole coloring experience a little frustrating. Even though they can’t undo their work on paper, users have an expectation that digital apps allow them to undo their mistakes, so this is one thing I would definitely fix in further iterations. Furthermore, I would also allow users to see how big the brush size is in hard mode instead of making them actually color to see it. This can be easily accomplished by making the brush cursor a circle the size of a brush. Another thing I might possibly want to add is an option to change brush size. Lastly, an important thing I would have to fix is to not allow users to color on top of the lines. I was not sure how to do this in my last iteration, but it is definitely an important thing to figure out how to do for a final iteration of this project.
+                  </div>	
+                  <div class="column is-1"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="columns" id="contact">
+            <div class="column"><img src="assets/images/getintouch.png" width="15%" alt="Get in Touch"><br>
+              I'd love to hear from you! Feel free to shoot <br> me an email at <span class="footer-link"><a href="mailto:sraman@berkeley.edu">sraman@berkeley.edu</a></span>
+              <br><a href="https://github.com/samyraman" target="_blank"><img src="assets/images/github.png" alt="GitHub" width="33px" class="footer-img"> </a> 
+              <a href="https://www.linkedin.com/in/samyuktaraman/" target="_blank"><img src="assets/images/linkedin.png" alt="LinkedIn" width="33px" class="footer-img"> </a>
+            </div>    
+          </div>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+          <script src="assets/javascript.js"></script>
+        </body>
+        </html>

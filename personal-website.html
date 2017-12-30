@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Samyukta Raman</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.css" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Rozha+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/style.css" />
+  <script src="https://use.fontawesome.com/b0894740c0.js"></script>
+</head>
+
+<body>
+	<section class="hero">
+   <div class="hero-head">
+    <nav class="navbar header-link" role="navigation" aria-label="main navigation">
+     <div class="navbar-brand">
+      <a href="index.html" data-hover="Home">Home</a>
+      <div class="navbar-burger burger" data-target="navMenu" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+       <span></span>
+       <span></span>
+       <span></span>
+     </div>
+   </div>
+   <div id="navMenu" class="navbar-menu">
+    <div class="navbar-end">
+     <a href="about.html" data-hover="About">About</a>
+     <div class="navbar-end">
+       <a href="#contact" data-hover="Contact">Contact</a>
+     </div>
+   </div>
+ </div>
+</nav>
+</div>
+</section>
+<div class="container content">
+  <div class="columns">
+   <div class="column title">Personal Website</div>
+ </div>
+ <div class="columns"><div class="column"><h2>Web Design</h2></div></div>
+ <div class="columns">
+   <div class="column center title-img"><img src="assets/images/personal-website/personal-website.png" width="60%"></div>
+ </div>
+
+ <div class="columns"><div class="column center"><h2><span class="underline">Overview</span></h2></div></div>
+
+ <div class="columns">
+  <div class="column is-1"></div>
+  <div class="column">
+    <p>This was my first attempt at building a personal website from scratch. I'd been fascinated by the Parallax trend, particularly by its use in the <span class="text-link"><a href="http://www.firewatchgame.com/" alt="Firewatch" target="_blank">Firewatch</a></span> website, so I decided to create something similar of my own.</p>
+    <p>The flat landscape header image was a lot of fun to make. I drew each layer individually in Photoshop and then animated each with a different speed to create the parallax effect. </p>
+  </div>
+  
+  <div class="column">
+    <p>I also had a lot of fun experimenting with different colors and effects (the link effects are a personal favorite of mine).</p>
+    <p> I ultimately replaced the website with my current one both in order to create a more portfolio-based showcase of my work and to speed up loading time, but I had a lot of fun building that site and learned a lot through the process.</p></div>
+
+    <div class="column">
+      <p>One takeaway I learned from this project was that responsive design is harder than I thought — things appeared vastly different across different broswers and on different devices, and some of those bugs were extremely hard to fix. To mediate those differences, I decided to use Bulma in my current website to take care of responsiveness for me. </p>
+    </div>
+
+    
+    <div class="column is-1"></div>
+  </div>
+
+  <div class="columns"><div class="column center"><h2><span class="underline">Preview</span></h2></div></div>
+  <div class="columns">
+   <div class="column is-1"></div>
+   <div class="column">
+    Here is a preview of the old website (with links deprecated).
+  </div>
+  <div class="column is-1"></div>
+</div>
+<div class="columns">
+ <div class="column">
+  <iframe src="old-website/index.html"></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="columns" id="contact">
+  <div class="column"><img src="assets/images/getintouch.png" width="15%" alt="Get in Touch"><br>
+    I'd love to hear from you! Feel free to shoot <br> me an email at <span class="footer-link"><a href="mailto:sraman@berkeley.edu">sraman@berkeley.edu</a></span>
+    <br><a href="https://github.com/samyraman" target="_blank"><img src="assets/images/github.png" alt="GitHub" width="33px" class="footer-img"> </a> 
+    <a href="https://www.linkedin.com/in/samyuktaraman/" target="_blank"><img src="assets/images/linkedin.png" alt="LinkedIn" width="33px" class="footer-img"> </a>
+  </div>    
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="assets/javascript.js"></script>
+</body>
+</html>

@@ -1,101 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>Samyukta Raman</title>
-
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
-  $(document).ready(function(){
-    $(window).scroll(function() {
-      if ($(document).scrollTop() > 550) {
-        $(".navbar").slideDown();
-      } else {
-        $(".navbar").slideUp();
-      }
-    });
-  });
-  </script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.css" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Rozha+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/style.css" />
+  <script src="https://use.fontawesome.com/b0894740c0.js"></script>
 </head>
+
 <body>
+	<section class="hero">
+   <div class="hero-head">
+    <nav class="navbar header-link" role="navigation" aria-label="main navigation">
+     <div class="navbar-brand">
+      <a href="index.html" data-hover="Home">Home</a>
+      <div class="navbar-burger burger" data-target="navMenu" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+       <span></span>
+       <span></span>
+       <span></span>
+     </div>
+   </div>
+   <div id="navMenu" class="navbar-menu">
+    <div class="navbar-end">
+     <a href="about.html" data-hover="About">About</a>
+     <div class="navbar-end">
+       <a href="#contact" data-hover="Contact">Contact</a>
+     </div>
+   </div>
+ </div>
+</nav>
+</div>
+</section>
+<div class="container content">
+  <div class="columns">
+   <div class="column title">Youtube Mirror</div>
+ </div>
+ <div class="columns"><div class="column"><h2>A Web Application</h2></div></div>
+ <div class="columns">
+   <div class="column center title-img"><img src="assets/images/mirror/youtubemirror.png" width="60%"></div>
+ </div>
 
-  <div class="parallax-container">
-    <div class="parallax-layer title" data-parallax-speed="0.1" data-max-scroll="565">SAMYUKTA RAMAN</div>
-    <div class="parallax-layer layer-1" data-parallax-speed="0.2" data-max-scroll="565"></div>
-    <div class="parallax-layer layer-2" data-parallax-speed="0.3" data-max-scroll="565"></div>
-    <div class="parallax-layer layer-3" data-parallax-speed="0.5" data-max-scroll="565"></div>
-    <div class="parallax-layer layer-4" data-parallax-speed="0.7" data-max-scroll="565"></div>
-    <div class="parallax-layer layer-5" data-parallax-speed="0.9" data-max-scroll="565"></div>
-  </div>
+ <div class="columns"><div class="column center"><h2><span class="underline">Overview</span></h2></div></div>
 
-  <div class="content">
-    <div class="navbar">
-      <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+ <div class="columns">
+  <div class="column is-1"></div>
+  <div class="column">
+   The <strong>YouTube Mirror</strong> was a fun little project! I have often found myself in the awkward position of swiveling back and forth between my makeup mirror and my laptop with a makeup video open, trying to follow along with the tutorial. This app aims to eliminate that struggle by combining the two into one easy to use screen.</div>
+
+   <div class="column">
+     In this app, you can load a video of your choice into the top right corner of the screen. Your webcam serves as your mirror, making it easy to see your face and the video at the same time without having to go back and forth between the two.</div>
+
+     <div class="column">
+      You can also easily control the video using your smartphone as a wand. Simply move your phone forward to play, move it back to pause, and roll it to the left or right to rewind or forward the video by 15 seconds. Putting on makeup just became a lot more fun!</div>
+      <div class="column is-1"></div>
     </div>
-    <div class="topbar"><img src="assets/topbar.png" width="100%" width= "100vw"></div>
-    <div id="about">
-      <h1 class="large"><span class="underline">YouTube Mirror</span></h1>
-      <h2>Web Application</h2>
-      <div class="center"><img src="assets/mirror.png" width="70%"></div>
-      <div id="introtext" class="clearfix">
-        <section class="col1 clearfix">
-          <p>The <strong>YouTube Mirror</strong> was a fun little project! I have often found myself in the awkward position of swiveling back and forth between my makeup mirror and my laptop with a makeup video open, trying to follow along with the tutorial. This app aims to eliminate that struggle by combining the two into one easy to use screen. </p></p>
-        </section>
-  
-        <section class="col2 clearfix">
-          <p>In this app, you can load a video of your choice into the top right corner of the screen. Your webcam serves as your mirror, making it easy to see your face and the video at the same time without having to go back and forth between the two. </p>
-        </section>
 
-        <aside class="col3 clearfix">
-          <p>You can also easily control the video using your smartphone as a wand. Simply move your phone forward to play, move it back to pause, and roll it to the left or right to rewind or forward the video by 15 seconds. Putting on makeup just became a lot more fun!</p>
-        </aside>
-      </div>
-    </div>
+    <div class="columns"><div class="column center"><h2><span class="underline">Technology</span></h2></div></div>
 
-    <div id="introtext" class="clearfix">
-        <section class="col1 clearfix">
-          <h2 class="underline">Technology:</h2>
-          <p>As a web app, the <strong>YouTube Mirror</strong> was built using the <u>Ruby on Rails</u> framework. </p>
-          <p>On the front end, we loaded a webcam video feed onto the screen and embedded a video at the top.</p>
-          <p>Then, we opened a <u>WebSockets</u> connection between the mirror (your laptop) and the wand (your smartphone) in order to transmit the smartphone's <u>orientation and motion data</u>, which we used to interpret certain wand gestures and then bind them to their corresponding actions.</p>
-          <div class="center"><button onclick="window.open('https://github.com/samyraman/YoutubeMirror')" type="button" class="github">View on GitHub</button></div>
-        </section>
-  
-        <section class="video clearfix">
-          <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/h7kkCt0kLBs" frameborder="0" allowfullscreen></iframe></div>
-        </section>
-
-    </div>
-    <div class="back"><span class="link"><a href="index.html#work">See the rest of my work</a></span></div>
-
-
-    <div id="contact">
-      <footer class="page-footer">
-        <div class="footer-text">
-          <span class="footer-title">Get in touch!</span>
-          <p>I'd love to hear from you! Feel free to shoot me an email at <span class="link"><a href="mailto:sraman@berkeley.edu">sraman@berkeley.edu</a></span></p>
-          <p>
-            <a href="https://github.com/samyraman" target="_blank"><img src="assets/github.png" alt="GitHub" width="30px"> </a>
-            <a href="https://www.linkedin.com/in/samyuktaraman/" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn" width="30px"> </a>
-          </p>
+    <div class="columns is-centered">
+      <div class="column is-1"></div>
+      <div class="column">
+        <p>As a web app, the <strong>YouTube Mirror</strong> was built using the <u>Ruby on Rails</u> framework. </p>
+        <p>On the front end, we loaded a webcam video feed onto the screen and embedded a video at the top.</p>
+        <p>Then, we opened a <u>WebSockets</u> connection between the mirror (your laptop) and the wand (your smartphone) in order to transmit the smartphone's <u>orientation and motion data</u>, which we used to interpret certain wand gestures and then bind them to their corresponding actions.</p>
+        <div class="center">
+          <a href="https://github.com/samyraman/YoutubeMirror" target="_blank" class="animated-button github-button">View on GitHub</a> </div>
         </div>
-      </footer>
-    </div>
-  </div>
+
+        <div class="column is-6">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/h7kkCt0kLBs" frameborder="0" allowfullscreen></iframe></div>
+
+         
+         <div class="column is-1"></div>
+       </div>
+       <div class="columns"><div class="column center"><h2><span class="underline">Design Process</span></h2></div></div>
+       <div class="columns">
+         <div class="column is-1"></div>
+         <div class="column"><h3>Observational Study</h3>
+           We conducted an observational study at Brewed Awakening (a local coffee shop) to determine the habits of users interacting with a board display (in our case, the menu board) through a proxemics framework. As the customer approached the board, changing their proxemic zone, we noticed changes in behavior. We were able to draw the following observational insights:
+           <ol>
+            <li><strong>Proxemics</strong> play an interesting role in terms of customer interaction with the menu. When customers are far away, they typically do not notice the board as it is in the periphery and they are usually engaged in noticing their surroundings. The board becomes the focus, however, as the customer nears the counter when it is about time for them to order. </li> <br>
+            <li>The majority of people look at the board before they order and even while ordering, suggesting that the board is <strong>not just a way to gather information</strong>, but rather a <strong>social habit</strong>. Under the assumption that most customers frequent the same shops and enjoy a particular type of coffee, the fact that many still observe the board shows that this behavior has become ingrained in their interaction with the board. </li>
+          </ol>
+          
+          <h3>Interviews</h3>
+          We then conducted interviews to discover how individuals interact with mirrors in private. We gathered the following insights:<br>
+          <ol><li><strong>Number of mirrors</strong>/accessibility affects how not just how frequently you use it but also how you use it. People with fewer/no mirrors typically use one only to check their appearance whereas people who own more mirrors/have easy access to them tend to spend more time just looking at their reflection casually.</li> <br>
+
+            <li>Smartphone has become almost like a <strong>replacement for a mirror</strong> - people didn’t think twice before stating that they use a smartphone front camera to look at themselves when there isn’t a mirror around.</li></ol>
+
+            <h3>Prototyping</h3>
+            <p>Based on our insights, we decided to create an interaction that allows users to interact with a video stream (ie. makeup tutorial) through different wand actions using their smartphone. In analyzing user pain points, a few gestures were captured: <br><br> First, if the user misses a section and wishes to pause or rewind the video, he or she is able to move the wand backwards to <strong>pause</strong>, then roll it counterclockwise to <strong>rewind</strong> by 15 seconds. We decided these simple movements will be key with user interaction in mind, as many users have a hard time juggling using their mirror, laptop, and makeup kit with only two hands while simultaneously applying makeup. Other features we included in our wireframe are <strong>playing</strong> the video (moving wand forward), <strong>fastforwarding</strong> a section by 15 seconds (rolling the wand clockwise) and <strong>rewinding</strong> to the beginning (swiping the wand quickly to the left).
+
+              <div class="center"><strong><u>Lo-fi Interaction Sketch</u></strong></div>
+              <div class="column center"><img src="assets/images/mirror/interaction-sketch.png" width="60%"></div><br>
+              
+              Using this interaction sketch, we engaged in a series of vignettes to break down our interactions. First we parsed and analyzed our smartphone’s gyrometer and accelerometer data to derive various gestures possible on a phone, such as moving forward (play) and rolling left (rewinding the video by 15 seconds). Then we incorporated a webcam feed to allow interactions with the mirror and created a WebSocket connection between the mirror and the smartphone in order to send instructions between them.
+
+              <div class="center"><strong><u>Extracting Motion Data</u></strong></div>
+              <div class="column center"><img src="assets/images/mirror/accelerometer.gif" width="60%"></div><br>
+
+              <p>After this, we built our hi-fidelity prototype, which takes into account two devices. The first device is a mirror, which allows for constant webcam streaming and embeds an interactive video of your choosing in the top right corner. The second, an interactive wand that senses gestures to pause, play, and rewind certain parts of your video.</p>
+
+              <p><strong><u>Mirror:</u></strong> this mirror provides a clear reflection for the user using websockets protocol and allows for them to quickly switch focus between the loaded video and their own reflection. By moving their smartphone in and out, the user is able to “play” and “pause” the video as sensed through the wand.</p>
+              <p><strong><u>Wand:</u></strong> the wand functionality is minimized to avoid over-reliance, especially when users are busy doing other activities. The device is an easy way to rewind and fast forward the video by 15 second, creating these actions on a negative and positive roll respectively.</p>
+
+              <div class="center"><strong><u>Hi-fi prototype</u></strong></div>
+              <div class="column center"><img src="assets/images/mirror/hi-fi-mirror.png" width="60%"></div><br>
+              
 
 
+              <h3>User Testing</h3>
+              <p>In order to determine possible user interaction bugs within our implementation, we performed a cognitive walkthrough with a focus on analyzing the following three areas:
+                <ol>
+                  <li><u>Affordance</u>: knowing what action to do</li>
+                  <li><u>Availability</u>: having the correct user action available</li>
+                  <li><u>Evaluation</u>: engaging correctly with device feedback</li>
+                </ol></p>
 
-  <script src="parallax.js"></script>
-  
+                <br><strong><u>User feedback:</u></strong> 
+                <p>After we explained that this mirror was intended to aid in applying makeup, our user was able to quickly find the intended “start” action by moving the phone in and playing the video. At that point, however, it became confusing to understand what other gestures were available for this application. Initially, it was also unclear whether or not the application was providing proper feedback to the user due to connectivity issues, and so “evaluation” was difficult to ascertain.</p>
+                <p>The three main usability issues we received as feedback are the following:
+                  <ol>
+                    <li>Indication of <strong>how to interact</strong> with the screen: some gestures are clear (such as leaning in and out) but user may be uncertain about what other gestures are possible</li>
+                    <li>Determining whether or not the <strong>connection</strong> between wand and mirror is active in case of any WiFi issues or otherwise</li>
+                    <li><strong>Removing false affordances</strong> in the video application; for example, the “play/pause” button implies a GUI that suggests the user should click on the screen instead of gesturing with the wand as intended</li>
+                  </ol></p><br>
 
-</body>
-</html>
+                  <p>In addressing these issues we implemented the following fixes: On the bottom right, there will be an indicator to show whether or not the application is connected across Websockets. Since Websockets automatically disconnects after a period of inactivity, this will help the user know when to restart the application in order to achieve connection again. </p>
+
+                  <p>Above the “connected” message, on application startup, there will be a text panel that appears briefly, indicating key interactions before receding into the background. This panel is in the user’s periphery, so once the user has become acquainted with the interface’s functionality, he or she can focus on the mirror itself.</p>
+
+                  <p>Lastly, we decided to remove the video bar from the loaded clip. This will avoid any false affordance of a GUI and hopefully create a more seamless user experience with fewer distractions.</p><br>
+                  <div class="center"><strong><u>Changes after cognitive walkthrough:</u></strong></div>
+                  <div class="column center"><img src="assets/images/mirror/poststudio.gif" width="60%"></div>
+                </div>	
+                <div class="column is-1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="columns" id="contact">
+          <div class="column"><img src="assets/images/getintouch.png" width="15%" alt="Get in Touch"><br>
+            I'd love to hear from you! Feel free to shoot <br> me an email at <span class="footer-link"><a href="mailto:sraman@berkeley.edu">sraman@berkeley.edu</a></span>
+            <br><a href="https://github.com/samyraman" target="_blank"><img src="assets/images/github.png" alt="GitHub" width="33px" class="footer-img"> </a> 
+            <a href="https://www.linkedin.com/in/samyuktaraman/" target="_blank"><img src="assets/images/linkedin.png" alt="LinkedIn" width="33px" class="footer-img"> </a>
+          </div>    
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+        <script src="assets/javascript.js"></script>
+      </body>
+      </html>

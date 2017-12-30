@@ -1,108 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>Samyukta Raman</title>
-
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
-  $(document).ready(function(){
-    $(window).scroll(function() {
-      if ($(document).scrollTop() > 550) {
-        $(".navbar").slideDown();
-      } else {
-        $(".navbar").slideUp();
-      }
-    });
-  });
-  </script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.css" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Rozha+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/style.css" />
+  <script src="https://use.fontawesome.com/b0894740c0.js"></script>
 </head>
+
 <body>
+	<section class="hero">
+   <div class="hero-head">
+    <nav class="navbar header-link" role="navigation" aria-label="main navigation">
+     <div class="navbar-brand">
+      <a href="index.html" data-hover="Home">Home</a>
+      <div class="navbar-burger burger" data-target="navMenu" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+       <span></span>
+       <span></span>
+       <span></span>
+     </div>
+   </div>
+   <div id="navMenu" class="navbar-menu">
+    <div class="navbar-end">
+     <a href="about.html" data-hover="About">About</a>
+     <div class="navbar-end">
+       <a href="#contact" data-hover="Contact">Contact</a>
+     </div>
+   </div>
+ </div>
+</nav>
+</div>
+</section>
+<div class="container content">
+  <div class="columns">
+   <div class="column title">Bloom</div>
+ </div>
+ <div class="columns"><div class="column"><h2>A Mobile Web Application</h2></div></div>
+ <div class="columns">
+   <div class="column center title-img"><img src="assets/images/bloom/bloomheroimage.png" width="60%"></div>
+ </div>
 
-  <div class="parallax-container">
-    <div class="parallax-layer title" data-parallax-speed="0.1" data-max-scroll="565">SAMYUKTA RAMAN</div>
-    <div class="parallax-layer layer-1" data-parallax-speed="0.2" data-max-scroll="565"></div>
-    <div class="parallax-layer layer-2" data-parallax-speed="0.3" data-max-scroll="565"></div>
-    <div class="parallax-layer layer-3" data-parallax-speed="0.5" data-max-scroll="565"></div>
-    <div class="parallax-layer layer-4" data-parallax-speed="0.7" data-max-scroll="565"></div>
-    <div class="parallax-layer layer-5" data-parallax-speed="0.9" data-max-scroll="565"></div>
-  </div>
+ <div class="columns"><div class="column center"><h2><span class="underline">Overview</span></h2></div></div>
 
-  <div class="content">
-    <div class="navbar">
-      <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+ <div class="columns">
+  <div class="column is-1"></div>
+  <div class="column">
+   <em>In our world, where we often lack meaningful connections in our day-to-day lives and even more so, a lack of understanding of how others see the world, we hope to create an application that creates more meaningful connections seamlessly.</em><br><br><p class="center"><img src="assets/images/bloom/bloomicon.png" alt="Bloom logo" width="70px"></p></div>
+
+   <div class="column">
+     <p><strong>Bloom</strong> is a group effort with some of the greatest people I've ever worked with! We knew we wanted to emulate an interaction reminiscent of a space such as a coffee shop where the main focus is interacting with your physical location, and thus by extension, with the people around you. </p>
+     <p>We thought about the physical experience of leaving your mark behind (<em>by carving your initials into a wooden bench, perhaps?</em>) and of coming across someone else's mark days (<em>weeks? months? years?</em>) later and wondering what that person was thinking in the moment.</p>
+     <p>And that was how <strong>Bloom</strong> came about! </p> </div>
+
+     <div class="column">
+      <p>We realized that there are many people who frequent specific locations every day and enjoy community, but seem to find something lacking in their lives. With <strong>Bloom</strong>, users can create mementos, nicknamed <em>"seeds"</em>, of either text, drawing, photos, or videos. As they go about their day, they may find community gardens, where they can drop their seed anonymously and view the seeds created by other users. This creates an anonymous community where users can leave small mementos from their lives, inspire and impact others, and grow as people themselves.</p></div>
+      <div class="column is-1"></div>
     </div>
-    <div class="topbar"><img src="assets/topbar.png" width="100%" width= "100vw"></div>
-    <div id="about">
-      <h1 class="large"><span class="underline">Bloom</span></h1>
-      <h2>Mobile Web Application</h2>
-      <div class="center"><img src="assets/bloomheroimage.png" width="60%"></div>
-      <div id="introtext" class="clearfix">
-        <section class="col1 clearfix">
-          <p class="center"><img src="assets/bloomicon.png" alt="Bloom logo" width="30%"></p>
-          <p><em>In our world, where we often lack meaningful connections in our day-to-day lives and even more so, a lack of understanding of how others see the world, we hope to create an application that creates more meaningful connections seamlessly.</em></p>
-        </section>
-  
-        <section class="col2 clearfix">
-          <p><strong>Bloom</strong> is a group effort with some of the greatest people I've ever worked with! We knew we wanted to emulate an interaction reminiscent of a space such as a coffee shop where the main focus is interacting with your physical location, and thus by extension, with the people around you. </p>
-          <p>We thought about the physical experience of leaving your mark behind (<em>by carving your initials into a wooden bench, perhaps?</em>) and of coming across someone else's mark days (<em>weeks? months? years?</em>) later and wondering what that person was thinking in the moment.</p>
-          <p>And that was how <strong>Bloom</strong> came about! </p>
-        </section>
 
-        <aside class="col3 clearfix">
-          <p>We realized that there are many people who frequent specific locations every day and enjoy community, but seem to find something lacking in their lives. With <strong>Bloom</strong>, users can create mementos, nicknamed <em>"seeds"</em>, of either text, drawing, photos, or videos. As they go about their day, they may find community gardens, where they can drop their seed anonymously and view the seeds created by other users. This creates an anonymous community where users can leave small mementos from their lives, inspire and impact others, and grow as people themselves.</p>
-        </aside>
+    <div class="columns"><div class="column center"><h2><span class="underline">Technology</span></h2></div></div>
+
+    <div class="columns is-centered">
+      <div class="column is-1"></div>
+      <div class="column">
+       <br><p>As a web app, <strong>Bloom</strong> was built using the <u>Ruby on Rails</u> framework. </p>
+       <p>On the front end, we experimented with various <u>JavaScript</u> libraries and plugins, and we also played around with drawing fractal trees on HTML5 canvases when we planted our seeds.</p>
+       <br><p>Then, we bound a user's seed to their seed location the <u>Google Maps API</u> and utilized <u>Active Record</u> to query the database for our seed messages.</p>
+       <div class="center">
+        <a href="https://github.com/samyraman/Bloom" target="_blank" class="animated-button github-button">View on GitHub</a> </div>
       </div>
-    </div>
 
-    <div id="introtext" class="clearfix">
-        <section class="col1 clearfix">
-          <h2 class="underline">Technology:</h2>
-          <p>As a web app, <strong>Bloom</strong> was built using the <u>Ruby on Rails</u> framework. </p>
-          <p>On the front end, we experimented with various <u>JavaScript</u> libraries and plugins, and we also played around with drawing fractal trees on HTML5 canvases when we planted our seeds.</p>
-          <p>Then, we bound a user's seed to their seed location the <u>Google Maps API</u> and utilized <u>Active Record</u> to query the database for our seed messages.</p>
-          <div class="center"><button onclick="window.open('https://github.com/samyraman/Bloom')" type="button" class="github">View on GitHub</button></div>
-        </section>
-  
-        <section class="col2 clearfix">
-          <p class="center"><img src="assets/bloomscreen1.png" width="85%" alt="Google Maps API"></p>
-        </section>
+      <div class="column">
+       <p class="center"><img src="assets/images/bloom/bloomscreen1.png" width="80%" alt="Google Maps API"></p></div>
 
-        <aside class="col3 clearfix">
-          <p class="center"><img src="assets/bloomscreen2.png" width="93%" alt="Seeds display messages"></p>
+       <div class="column">
+        <p class="center"><img src="assets/images/bloom/bloomscreen2.png" width="80%" alt="Seeds display messages"></p></div>
+        <div class="column is-1"></div>
+      </div>
+      <div class="columns"><div class="column center"><h2><span class="underline">Design Process</span></h2></div></div>
+      <div class="columns">
+       <div class="column is-1"></div>
+       <div class="column"><h3>Observational Study</h3>
+         To begin our brainstorming process, we sat at Yali's cafe on Oxford for an hour and observed how customers interacted and used the space around them. This is a summary of our findings: 
+         <ul>
+           <li>Customers were all on their phones or their laptops. Some were with friends but still on their phones</li>
+           <li>Most people seem to already have their order in mind (implies coming here regularly)</li>
+           <li>Most people don’t come here for food; they either have a coffee or smoothie and have it be sitting with them while they casually drink it. No intention to really finish it, but to just have it as a companion</li>
+           <li>People seem to know each other - a man walked in and a lady who was sitting down stood up to go say hi, after which she returned to her own seat and they sat separately, working on their own</li>
+           <li>People usually spaced a few tables away, not sitting next to each other directly</li>
+         </ul>
 
-        </aside>
-    </div>
-    <div class="back"><span class="link"><a href="index.html#work">See the rest of my work</a></span></div>
+         <h3>Interviews</h3>
+         We then conducted interviews to discover how individuals interact with others in a social setting. We gathered the following insights:<br><br>
+         <p>It seems that in general, people tend to have specific preferences about where they do work, whether at a cafe or at home. Our users <strong>go to cafes with a purpose</strong> and often enjoy the environment as a result. In terms of making small talk with friends and baristas, most agreed that small interactions at cafe are important. Although a few users said that small talk was not the main reason why they enjoyed working at cafes more, the casual nature of the environment allowed them to be more at ease and focused.</p>
+
+         <p>They also often <strong>enjoy consuming media in text form</strong> instead of audio or sound. For some, the convenience factor of listening on the go leads to audio being their medium of choice, but when given ample time, users typically enjoy being able to <strong>read primary sources</strong> rather than watch a video newscast. Reading also creates a more immersive experience, engaging the user on a deeper level than simply watching video or listening. One user mentioned how watching a newscast feels like the same thing over and over again, implying that for the interaction itself, <strong>content may not be as important as the medium</strong>.</p>
+
+         <p>When asked whether they noticed artifacts that others have left behind at a given location, such as graffiti or notes on a page, some users who have experienced this phenomenon mentioned that noticing these small artifacts had an impact on their mood in both positive and negative ways depending on the situation. This impact suggests that although individuals have different experiences in a given space, <strong>the shared aspect of the space may still affect others indirectly</strong> in observing what is left behind. One user even mentioned that she leaves inspirational notes in her textbooks to pass it forward, as she would feel better if she found a note while studying for a class.</p>
+
+         <h3>Prototyping</h3>
+         <p>Based on our insights, we decided to continue with our metaphor of the community garden, creating a shared space based on location to allow users to contribute their thoughts (“grow” the plant).</p>
+
+         <p>From an implementation standpoint, we decided to minimize the number of views necessary to create a seamless user experience, choosing to prompt users with suggestions as they get to the next step rather than bombarding them with a list of instructions. Cooling down the media is key to our interaction, so in order to emphasize user interaction over spoonfeeding content, we chose to have the application be a sandbox for the user to play around with different media forms (i.e. text, audio, visual) until an event occurs. Through this interaction, we hope to inspire users and allow them to experience everyday locations in a different light.</p>
+         <div class="center"><strong><u>Lo-fi Sketch</u></strong></div>
+         <div class="column center"><img src="assets/images/bloom/lo-fi.png" width="60%"></div><br>
+         <div class="center"><strong><u>Wireframe</u></strong></div>
+         <div class="column center"><img src="assets/images/bloom/wireframe.png" width="60%"></div>
+
+         <h3>User Testing</h3>
+         <p>Once we had completed building the hi-fi prototype, we began the process of user testing. After doing a heuristic analysis with our users, we found that we had violated the following heuristics:</p>
+         <table class="is-fullwidth is-striped">
+          <tr>
+            <th>Rating</th>
+            <th>Heuristic</th> 
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Error Prevention</td> 
+            <td>There is no system feedback when users have their location services turned off and are unable to interact properly with the map as a result</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Consistency & Standards</td> 
+            <td>The maps view is aesthetically and functionally inconsistent with the other two views (home page and branch view)</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>User Control & Freedom</td> 
+            <td>User interaction with the map view is unintuitive as there is no clear indication of what to do when on the map (ie. explore) or how to interact with the seed (ie. going to the branch view)</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>User Control & Freedom</td> 
+            <td>On branch view, it is unclear to the user how they are able to close out of messages and plant a seed from their own storage</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Visibility of System Status</td> 
+            <td>On the branch view, when the tree reaches maximum height and is removed, there is no clear indication whether this is a deliberate removal or if this is an error</td>
+          </tr>
+        </table>
+
+        <p>We then reiterated on our prototype and incorporated this feedback into our final version of the application.</p>
+
+        <h3>Media & Branding</h3>
+        <p>We titled our application <em>“Bloom”</em>. This title correlates with our seed metaphor and conveys the idea of inspiration and the start of something new. There is a great deal that is blooming when using this application —— the creation of new ideas, of new community, and new inspirations.</p>
+        <p>We created the logo with the mindset of using flowery colors to match the theme and aesthetic of our application. We chose a script font because it was natural rather than being rigid. This encapsulated the fun-loving and spontaneous nature of our interaction</p>
+        <span class="column center"><img src="assets/images/bloom/bloom_logo.png" width="30%"></span>
+        <p>We had a chance to present our app at a poster session and, in keeping with the theme of our project, we designed the poster in the shape of a tree:</p>
+        <span class="column center"><img src="assets/images/bloom/bloom_poster.png" width="100%"></span>
 
 
-    <div id="contact">
-      <footer class="page-footer">
-        <div class="footer-text">
-          <span class="footer-title">Get in touch!</span>
-          <p>I'd love to hear from you! Feel free to shoot me an email at <span class="link"><a href="mailto:sraman@berkeley.edu">sraman@berkeley.edu</a></span></p>
-          <p>
-            <a href="https://github.com/samyraman" target="_blank"><img src="assets/github.png" alt="GitHub" width="30px"> </a>
-            <a href="https://www.linkedin.com/in/samyuktaraman/" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn" width="30px"> </a>
-          </p>
-        </div>
-      </footer>
+      </div>	
+      <div class="column is-1"></div>
     </div>
   </div>
-
-
-
-  <script src="parallax.js"></script>
-  
-
+</div>
+<div class="columns" id="contact">
+  <div class="column"><img src="assets/images/getintouch.png" width="15%" alt="Get in Touch"><br>
+    I'd love to hear from you! Feel free to shoot <br> me an email at <span class="footer-link"><a href="mailto:sraman@berkeley.edu">sraman@berkeley.edu</a></span>
+    <br><a href="https://github.com/samyraman" target="_blank"><img src="assets/images/github.png" alt="GitHub" width="33px" class="footer-img"> </a> 
+    <a href="https://www.linkedin.com/in/samyuktaraman/" target="_blank"><img src="assets/images/linkedin.png" alt="LinkedIn" width="33px" class="footer-img"> </a>
+  </div>    
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="assets/javascript.js"></script>
 </body>
 </html>

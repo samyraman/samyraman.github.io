@@ -1,99 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Samyukta Raman</title>
-
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
-  $(document).ready(function(){
-    $(window).scroll(function() {
-      if ($(document).scrollTop() > 550) {
-        $(".navbar").slideDown();
-      } else {
-        $(".navbar").slideUp();
-      }
-    });
-  });
-  </script>
-  <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Samyukta Raman</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.css" />
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif|Rozha+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/style.css" />
+	<script src="https://use.fontawesome.com/b0894740c0.js"></script>
 </head>
+
 <body>
+	<section class="hero is-fullheight">
+		<div class="hero-head">
+			<nav class="navbar header-link" role="navigation" aria-label="main navigation">
+				<div class="navbar-brand">
+					<a href="#" data-hover="Home">Home</a>
+					<div class="navbar-burger burger" data-target="navMenu" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<div id="navMenu" class="navbar-menu">
+					<div class="navbar-end">
+						<a href="about.html" data-hover="About">About</a>
+						<div class="navbar-end">
+							<a href="#contact" data-hover="Contact">Contact</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="hero-body">
+			<div class="container">
+				<img src="assets/images/header.png" alt="">
+			</div>
+		</div>
+		<div class="hero-foot">
+			<a href="#main"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+		</div>
+	</section>
+	<div class="container">
+		<div id="main">
+			<div class="columns">
+				<div class="column previewimg">
+					<a href="bloom.html">
+						<img src="assets/images/preview-tiles/bloom.png" class="scalable">
+						<span><h3>Bloom</h3><br><strong>Mobile Web Development &ensp;//&ensp;Ruby on Rails&ensp;//&ensp;UI Design</strong></span>
+					</a>
+				</div>
+				<div class="column previewimg">
+					<a href="youtube-mirror.html">
+						<img src="assets/images/preview-tiles/youtube-mirror.png" class="scalable">
+						<span><h3>Youtube Mirror</h3><br><strong>Web Development &ensp;//&ensp;Ruby on Rails&ensp;//&ensp;UI/UX Design</strong></span>
+					</a>
+				</div>
+			</div>
+			<div class="columns">
+				<div class="column previewimg">
+					<a href="where2eat.html">
+						<img src="assets/images/preview-tiles/where2eat.png" class="scalable">
+						<span><h3>Where2Eat</h3><br><strong>Machine Learning &ensp;//&ensp;Web Development&ensp;//&ensp;NodeJS&ensp;//&ensp;MongoDB</strong></span>
+					</a>
+				</div>
+				<div class="column previewimg">
+					<a href="galactic-weather-app.html">
+						<img src="assets/images/preview-tiles/galactic-weather-app.png" class="scalable">
+						<span><h3>Galactic Weather App</h3><br><strong>UI Design</strong></span>
+					</a>
+				</div>
+			</div>
+			<div class="columns">
+				<div class="column previewimg is-half">
+					<a href="coloring-book.html">
+						<img src="assets/images/preview-tiles/coloring-book.png" class="scalable">
+						<span><h3>Interactive Coloring Book</h3><br><strong>Web Development &ensp;//&ensp;Ruby on Rails&ensp;//&ensp;Paper.js&ensp;//&ensp;UI Design</strong></span>
+					</a>
+				</div>
+				<div class="column previewimg is-half">
+					<a href="personal-website.html">
+						<img src="assets/images/preview-tiles/personal-website.png" class="scalable">
+						<span><h3>Personal Website</h3><br><strong>Web Design</strong></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div><br>
+	<div class="columns" id="contact">
+		<div class="column"><img src="assets/images/getintouch.png" width="15%" alt="Get in Touch"><br>
+			I'd love to hear from you! Feel free to shoot <br> me an email at <span class="footer-link"><a href="mailto:sraman@berkeley.edu">sraman@berkeley.edu</a></span>
+			<br><a href="https://github.com/samyraman" target="_blank"><img src="assets/images/github.png" alt="GitHub" width="33px" class="footer-img"> </a> 
+			<a href="https://www.linkedin.com/in/samyuktaraman/" target="_blank"><img src="assets/images/linkedin.png" alt="LinkedIn" width="33px" class="footer-img"> </a>
+		</div>    
+	</div>
+	
 
-  <div class="parallax-container">
-    <div class="parallax-layer title" data-parallax-speed="0.1" data-max-scroll="565">SAMYUKTA RAMAN</div>
-    <div class="parallax-layer layer-1" data-parallax-speed="0.2" data-max-scroll="565"></div>
-    <div class="parallax-layer layer-2" data-parallax-speed="0.3" data-max-scroll="565"></div>
-    <div class="parallax-layer layer-3" data-parallax-speed="0.5" data-max-scroll="565"></div>
-    <div class="parallax-layer layer-4" data-parallax-speed="0.7" data-max-scroll="565"></div>
-    <div class="parallax-layer layer-5" data-parallax-speed="0.9" data-max-scroll="565"></div>
-  </div>
-
-  <div class="content">
-    <div class="navbar">
-      <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-    <div class="topbar"><img src="assets/topbar.png" width="100%" width= "100vw"></div>
-    <div id="about">
-      <h1>Hello!</h1>
-      
-      <div id="introtext" class="clearfix">
-        <section class="col1 clearfix">
-          <img src="assets/samyukta.png" width="100%" alt="It's me!">
-        </section>
-  
-        <section class="col2 clearfix">
-          <p>My name is Samyukta, but my friends call me Samy. I’m a 4th year undergraduate at UC Berkeley studying <strong>Computer Science</strong> and <strong>Integrative Biology</strong>. I came into college intending to study developmental genetics but once I took my first CS class, I was hooked! Computer Science challenges me to think hard about things and actually <em>find</em> solutions to problems, and I love the creativity it inspires in me!</p>
-        </section>
-
-        <aside class="col3 clearfix">
-          <p>When I’m not in class or frantically finishing a problem set, I like to design things too. Doodling used to be a hobby of mine, but now I’ve extended my scope to cover digital media and it’s been a whole lot of fun! <span class="link"><a href="#work">Check out my work</a></span> or reach out and <span class="link"><a href="#contact">say hi!</a></span></p>
-        </aside>
-      </div>
-    </div>
-    <div id="work">
-      <h1>My Work</h1>
-      <div class="showcase clearfix">
-        <div class="work1"><span class="worktitle link"><a href="bloom.html">Bloom</a></span> <h2>Mobile web development</h2></div>
-        <div class="work2"><img src="assets/bloomscreen.png" width="50%"></div>
-      </div>
-      <div class="showcase clearfix">
-        <div class="work2"><img src="assets/youtubemirror.png" width="100%"></div>
-        <div class="work2"><span class="worktitle link"><a href="youtube-mirror.html">YouTube Mirror</a></span> <h2>Web development</h2></div>
-      </div>
-      <div class="showcase clearfix">
-        <div class="work2"><span class="worktitle link"><a href="galactic-weather.html">Galactic Weather App</a></span> <h2>UI Design</h2></div>
-        <div class="work2"><img src="assets/weatherapp.png" width="50%"></div>
-      </div>
-    </div>
-
-
-    <div id="contact">
-      <footer class="page-footer">
-        <div class="footer-text">
-          <span class="footer-title">Get in touch!</span>
-          <p>I'd love to hear from you! Feel free to shoot me an email at <span class="link"><a href="mailto:sraman@berkeley.edu">sraman@berkeley.edu</a></span></p>
-          <p>
-            <a href="https://github.com/samyraman" target="_blank"><img src="assets/github.png" alt="GitHub" width="30px"> </a>
-            <a href="https://www.linkedin.com/in/samyuktaraman/" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn" width="30px"> </a>
-          </p>
-        </div>
-      </footer>
-    </div>
-  </div>
-
-
-
-  <script src="parallax.js"></script>
-  
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script src="assets/javascript.js"></script>
 </body>
 </html>

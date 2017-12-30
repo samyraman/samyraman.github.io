@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Samyukta Raman</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.css" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Rozha+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/style.css" />
+  <script src="https://use.fontawesome.com/b0894740c0.js"></script>
+</head>
+
+<body>
+	<section class="hero">
+   <div class="hero-head">
+    <nav class="navbar header-link" role="navigation" aria-label="main navigation">
+     <div class="navbar-brand">
+      <a href="index.html" data-hover="Home">Home</a>
+      <div class="navbar-burger burger" data-target="navMenu" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+       <span></span>
+       <span></span>
+       <span></span>
+     </div>
+   </div>
+   <div id="navMenu" class="navbar-menu">
+    <div class="navbar-end">
+     <a href="about.html" data-hover="About">About</a>
+     <div class="navbar-end">
+       <a href="#contact" data-hover="Contact">Contact</a>
+     </div>
+   </div>
+ </div>
+</nav>
+</div>
+</section>
+<div class="container content">
+  <div class="columns">
+   <div class="column title">Galactic Weather App</div>
+ </div>
+ <div class="columns"><div class="column"><h2>UI Design</h2></div></div>
+ <div class="columns">
+   <div class="column center title-img"><img src="assets/images/weather/galacticheroimage.png" width="60%"></div>
+ </div>
+
+ <div class="columns"><div class="column center"><h2><span class="underline">Overview</span></h2></div></div>
+
+ <div class="columns">
+  <div class="column is-1"></div>
+  <div class="column">
+    <br><p>This was a project for my UI design class. The assignment was to design an interface for a mobile app that a galactic traveler would use while preparing for a voyage. </p>
+    <p>The user would have to be able to query the weather at any of the 9 planets in order to prepare their route. They would also have to get alerts about any major galactic weather events so as to plan their voyage accordingly.</p>
+  </div>
+  
+  <div class="column">
+    <br><p>I had a lot of fun designing this one! I went for a futuristic space-age feel. On my home screen, I used a circular carousel to imitate the planets revolving around the sun.</p>
+    <p>When you click on a planet, it takes you to the weather report which includes the forecast for the upcoming week as well as any major weather events. You can then slide through the planets at the top to easily navigate between them. You can also click the <strong><i class="fa fa-plus-circle" aria-hidden="true"></i></strong> button next to a planet's name to add it to a custom screen for easy comparison between planets. </p></div>
+
+    <div class="column center">
+      <img src="assets/images/weather/aroundthesun.gif" width="85%" alt="User Interface">
+    </div>
+
+    
+    <div class="column is-1"></div>
+  </div>
+
+  <div class="columns"><div class="column center"><h2><span class="underline">Design Process</span></h2></div></div>
+  <div class="columns">
+   <div class="column is-1"></div>
+   <div class="column"><h3>Formal Analysis</h3>
+    <p>To begin, I conducted a formal analysis on sci-fi images found online to discern common themes and motifs in typical sci-fi scenes. I noticed that by using <strong>dark colors</strong> in the background, the image is made to seem vast, which creates a sense of wonder. These dark colors contrast highly with the <strong>bright colors of the foreground text</strong>, which draws attention to them, making the text seem important. This is further emphasized by the use of <strong>short phrases</strong>, which gives the text a sense of urgency, as well as the use of <strong>uppercase letters</strong>, which also make the text seem important. Lastly, the users are pictured interacting with a large display, which further emphasizes the sense of vastness and paints a picture of immersion, as the user is pictured interacting completely with the device.</p>
+    <div class="column center"><img src="assets/images/weather/formal-analysis.png" width="80%"></div><br>
+    
+    
+    <h3>Prototyping</h3>
+    Based on these insights, I started designing low-fidelity interaction sketches that reflected these principles. After creating a few different interaction sketches, I decided to pursue this one:
+    <div class="column center"><img src="assets/images/weather/sketch.jpg" width="80%"></div><br>
+    <p>Some of the pain points in the first sketch were the fact that there was no way to see multiple planets’ weather forecasts on one screen to compare them, and no way to save certain locations so you could quickly access them. It would be useful for a traveler who frequently visits Pluto, Venus, and Saturn, for example, to have easy access to those planets’ forecasts moreso than the other planets. So, I refined my sketch to create an initial wireframe. </p>
+    <p>In this wireframe, I added a footer bar that contains buttons for current location, search, and a list of your chosen locations just for easy access and comparison. I expanded on that by creating buttons on each planet’s page to add that planet to your list or remove it if it’s already there. I also created a search page very similar to the one on the iPhone as well as a screen for the list of planets, where you can swipe left to remove it from the list. </p>
+    <div class="column center"><img src="assets/images/weather/wireframe1.jpg" alt="Initial wireframe" width="70%"><br><strong><u>Initial Wireframe</u></strong></div>
+
+    
+    <h3>User Testing</h3>
+    I began by conducting a heuristic analysis with some users and identified the following violations:</p>
+    <table class="is-fullwidth is-striped">
+      <tr>
+        <th>Rating</th>
+        <th>Heuristic</th> 
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Recognition vs. Recall</td> 
+        <td>Search bar doesn’t have autocomplete or suggestions. Inconvenient because user would have to type out ‘Jupiter’ even though it is the only planet starting with ‘J’. Autocomplete/saved previous searches makes this faster.</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Visibility of system status</td> 
+        <td>No alert/spinner etc. to let the user know what’s happening while waiting to fetch GPS coordinates or working on something else.</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Aesthetic and minimalist design</td> 
+        <td>It may potentially be overwhelming to a user to see all 9 planets listed on one home screen. Instead it may be more aesthetic to have a scroll.</td>
+      </tr>
+    </table>
+
+    <h3>Reiteration</h3>
+    I incorporated the changes suggested during the heuristic evaluation into a second version of my wireframe. In this version, I changed the home screen to scroll through the planets in a circular manner instead of listing them all statically on one screen (aesthetic and minimalist design). I also added an autocomplete function to the search bar to speed up user flow (recognition vs recall). Although not pictured in the wireframe, I added a spinner to show that the app is waiting for GPS signal (visibility of system status). Lastly, although not mentioned in the heuristic evaluation, I realized that there needed to be a way to easily delete planets from the customized list, but not without warning users first, so I created a swipe left to bring up the delete box (user control and freedom).
+    <div class="column center"><img src="assets/images/weather/wireframe2.png" alt="Final wireframe" width="70%"><br><strong><u>Final Wireframe</u></strong></div>
+
+    <h3>Hi-Fi Prototype</h3>
+    Finally, after mocking up the sketches and screens in my previous wireframe, I built a working mockup of the finished product:
+    <div class="column center"><img src="assets/images/weather/aroundthesun.gif" alt="Final product" width="28%"><br></div>
+  </div>
+
+
+  <div class="column is-1"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="columns" id="contact">
+  <div class="column"><img src="assets/images/getintouch.png" width="15%" alt="Get in Touch"><br>
+    I'd love to hear from you! Feel free to shoot <br> me an email at <span class="footer-link"><a href="mailto:sraman@berkeley.edu">sraman@berkeley.edu</a></span>
+    <br><a href="https://github.com/samyraman" target="_blank"><img src="assets/images/github.png" alt="GitHub" width="33px" class="footer-img"> </a> 
+    <a href="https://www.linkedin.com/in/samyuktaraman/" target="_blank"><img src="assets/images/linkedin.png" alt="LinkedIn" width="33px" class="footer-img"> </a>
+  </div>    
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="assets/javascript.js"></script>
+</body>
+</html>
