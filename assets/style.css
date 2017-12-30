@@ -309,6 +309,7 @@ a.animated-button.github-button:before {
 	color: #fff;
 	margin-top: 110px;
 	text-align: center;
+	overflow-x: hidden;
 }
 .footer-link a{
   color: #fff;
