@@ -340,3 +340,20 @@ iframe{
   text-decoration: none;
   border-bottom: 1px #6d3ebc dashed;
 }
+.tile .is-child {
+	cursor: zoom-in;
+}
+.tile .is-parent {
+	padding-top: 0px;
+}
+.modal {
+	cursor: default;
+}
+.modal-content .image {
+	height: 93vh;
+	text-align: center;
+}
+.modal-content .image img{
+	height: 100%;
+	width: auto;
+}
