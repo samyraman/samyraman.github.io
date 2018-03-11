@@ -120,10 +120,10 @@ function scroll() {
 	}
 	document.getElementById("gameBoard").addEventListener('touchend', function(e){
         var touched = e.changedTouches[0];
-	console.log(touched);
         var x = parseInt(touched.clientX) - document.getElementById("gameBoard").offsetLeft;
+	console.log(x);
         var width = document.querySelector(".circle").offsetWidth;
-	    var scrollPos = ~~(x/width);
+	    var scrollPos = ~~(x/30);
 	    dropDisc(currPlayer, scrollPos);
     }, false)
 };
