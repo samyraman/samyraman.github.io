@@ -129,8 +129,9 @@ function scroll() {
 
 document.getElementById("restart").onmousedown = function(){
 		newGame();
-		document.getElementById("scrollBar").classList.add("hide");
-
+}
+document.getElementById("restart").ontouchend = function(){
+		newGame();
 }
 
 
