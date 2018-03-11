@@ -18,11 +18,6 @@ body {
 	color: #e23a28;
 
 }
-@media (max-width: 767px) {
-    #scrollBar {
-        display:none;
-    }
-}
 #gameBoard {
 	width: 55%;
 	margin: 0 auto;
