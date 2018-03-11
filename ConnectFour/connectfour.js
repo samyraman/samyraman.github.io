@@ -118,11 +118,18 @@ function scroll() {
 			dropDisc(currPlayer, scrollPos);
 		}
 	}
+	document.getElementById("gameBoard").addEventListener('touchend', function(e){
+        touched = e.changedTouches[0];
+        x = parseInt(touchobj.clientX);
+        width = document.getElementById("gameBoard").offsetWidth/7;
+	    scrollPos = ~~(x/width);
+	    dropDisc(currPlayer, scrollPos);
+    }, false)
 };
 
 document.getElementById("restart").onmousedown = function(){
 			newGame();
-		}
+}
 
 
 newGame();
