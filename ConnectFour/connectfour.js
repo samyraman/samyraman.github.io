@@ -6,7 +6,7 @@ var disksDropped;
 function newGame() {
 	disksDropped = 0;
 	currPlayer = "red";
-	board.innerHTML='<div id="scrollBar"><span>&#9662;</span></div>';
+	board.innerHTML='<div id="scrollBar" class="hide"><span>&#9662;</span></div>';
 	document.querySelector(".redText").classList.remove("hide");
 	document.querySelector(".yellowText").classList.add("hide");
 	gameBoard = new Array(6)
@@ -102,6 +102,7 @@ function checkNeighbors(row, col, rowIncrement, colIncrement) {
 //Deals with moving the arrow cursor
 function scroll() {
 	this.onmousemove = function(event) {
+		document.getElementById("scrollBar").classList.remove("hide");
 		var x = event.clientX - document.getElementById("gameBoard").offsetLeft;
 	    var width = document.getElementById("gameBoard").offsetWidth/7;
 	    var scrollPos = ~~(x/width);
