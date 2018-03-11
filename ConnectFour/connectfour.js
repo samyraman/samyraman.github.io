@@ -120,6 +120,7 @@ function scroll() {
 		}
 	}
 	document.getElementById("gameBoard").ontouchend = function(e){
+		document.getElementById("scrollBar").classList.add("hide");
         	var touched = e.changedTouches[0];
 		var touchPos = parseInt(touched.target.id.slice(2,3))
 		dropDisc(currPlayer, touchPos);
@@ -127,6 +128,7 @@ function scroll() {
 };
 
 document.getElementById("restart").onmousedown = function(){
+		document.getElementById("scrollBar").classList.add("hide");
 		newGame();
 }
 
