@@ -6,6 +6,7 @@ var disksDropped;
 function newGame() {
 	disksDropped = 0;
 	currPlayer = "red";
+	document.getElementById("gameBoard").removeEventListener('touchend');
 	board.innerHTML='<div id="scrollBar" class="hide"><span>&#9662;</span></div>';
 	document.querySelector(".redText").classList.remove("hide");
 	document.querySelector(".yellowText").classList.add("hide");
@@ -121,9 +122,9 @@ function scroll() {
 	}
 	document.getElementById("gameBoard").addEventListener('touchend', function(e){
         var touched = e.changedTouches[0];
-	var scrollPos = parseInt(touched.target.id.slice(2,3))
-	dropDisc(currPlayer, scrollPos);
-    }, false)
+	var touchPos = parseInt(touched.target.id.slice(2,3))
+	dropDisc(currPlayer, touchPos);
+    })
 };
 
 document.getElementById("restart").onmousedown = function(){
