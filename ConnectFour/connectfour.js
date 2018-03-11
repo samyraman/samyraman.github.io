@@ -24,7 +24,7 @@ function newGame() {
 function findOpenSpace(col) {
 	for (i = 5; i >= 0; i--) {
 		if (gameBoard[i][col] == 0) {
-			return i
+			return i;
 		}
 	}
 }
@@ -119,22 +119,19 @@ function scroll() {
 			dropDisc(currPlayer, scrollPos);
 		}
 	}
+	//Deals with touch for mobile devices
 	document.getElementById("gameBoard").ontouchend = function(e){
 		document.getElementById("scrollBar").classList.add("hide");
         	var touched = e.changedTouches[0];
 		var touchPos = parseInt(touched.target.id.slice(2,3))
 		dropDisc(currPlayer, touchPos);
-    	};
+    };
 };
 
 document.getElementById("restart").onmousedown = function(){
-		newGame();
-}
-document.getElementById("restart").ontouchend = function(){
-		newGame();
+	newGame();
 }
 
 
 newGame();
-
 
