@@ -49,14 +49,14 @@ function dropDisc(color, col) {
 		if (checkForWinner(row, col)) {
 			setTimeout(function() {
   				alert(color + " wins!");
-				document.getElementById("gameBoard").removeEventListener('touchend', detectTouch);
+				document.getElementById("gameBoard").removeEventListener('touchend', detectTouch, true);
   				newGame();
 			}, 30)
 		}
 		else if (disksDropped == 42) {
 			setTimeout(function() {
 				alert("Game Over. It's a tie!");
-				document.getElementById("gameBoard").removeEventListener('touchend', detectTouch);
+				document.getElementById("gameBoard").removeEventListener('touchend', detectTouch, true);
 				newGame();
 			}, 30)
 		}
@@ -126,11 +126,11 @@ function scroll() {
 		var touchPos = parseInt(touched.target.id.slice(2,3))
 		dropDisc(currPlayer, touchPos);
     	};
-	document.getElementById("gameBoard").addEventListener('touchend', detectTouch)
+	document.getElementById("gameBoard").addEventListener('touchend', detectTouch, true)
 };
 
 document.getElementById("restart").onmousedown = function(){
-		document.getElementById("gameBoard").removeEventListener('touchend', detectTouch);
+		document.getElementById("gameBoard").removeEventListener('touchend', detectTouch, true);
 		newGame();
 }
 
