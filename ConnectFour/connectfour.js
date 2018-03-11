@@ -123,8 +123,14 @@ function scroll() {
         var x = parseInt(touched.clientX) - document.getElementById("gameBoard").offsetLeft;
 	console.log(x);
         var width = document.querySelector(".circle").offsetWidth;
-	    var scrollPos = ~~(x/30);
-	    dropDisc(currPlayer, scrollPos);
+	var scrollPos = ~~(x/30);
+	if (scrollPos >= 6) {
+		scrollPos = 6;
+	}
+	if (scrollPos <= 0) {
+		scrollPos = 0;
+	}
+	dropDisc(currPlayer, scrollPos);
     }, false)
 };
 
