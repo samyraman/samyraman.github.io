@@ -128,8 +128,9 @@ function scroll() {
 };
 
 document.getElementById("restart").onmousedown = function(){
-		document.getElementById("scrollBar").classList.add("hide");
 		newGame();
+		document.getElementById("scrollBar").classList.add("hide");
+
 }
 
 
