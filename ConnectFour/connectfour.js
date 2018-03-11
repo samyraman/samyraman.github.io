@@ -6,7 +6,6 @@ var disksDropped;
 function newGame() {
 	disksDropped = 0;
 	currPlayer = "red";
-	document.getElementById("gameBoard").removeEventListener('touchend');
 	board.innerHTML='<div id="scrollBar" class="hide"><span>&#9662;</span></div>';
 	document.querySelector(".redText").classList.remove("hide");
 	document.querySelector(".yellowText").classList.add("hide");
@@ -50,12 +49,14 @@ function dropDisc(color, col) {
 		if (checkForWinner(row, col)) {
 			setTimeout(function() {
   				alert(color + " wins!");
+				document.getElementById("gameBoard").removeEventListener('touchend', detectTouch);
   				newGame();
 			}, 30)
 		}
 		else if (disksDropped == 42) {
 			setTimeout(function() {
 				alert("Game Over. It's a tie!");
+				document.getElementById("gameBoard").removeEventListener('touchend', detectTouch);
 				newGame();
 			}, 30)
 		}
@@ -120,15 +121,17 @@ function scroll() {
 			dropDisc(currPlayer, scrollPos);
 		}
 	}
-	document.getElementById("gameBoard").addEventListener('touchend', function(e){
-        var touched = e.changedTouches[0];
-	var touchPos = parseInt(touched.target.id.slice(2,3))
-	dropDisc(currPlayer, touchPos);
-    })
+	var detectTouch = function(e){
+        	var touched = e.changedTouches[0];
+		var touchPos = parseInt(touched.target.id.slice(2,3))
+		dropDisc(currPlayer, touchPos);
+    	};
+	document.getElementById("gameBoard").addEventListener('touchend', detectTouch)
 };
 
 document.getElementById("restart").onmousedown = function(){
-			newGame();
+		document.getElementById("gameBoard").removeEventListener('touchend', detectTouch);
+		newGame();
 }
 
 
