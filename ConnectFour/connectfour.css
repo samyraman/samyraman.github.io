@@ -1,0 +1,84 @@
+body {
+	background-color: #31d0e2;
+}
+#container {
+	width: 95%;
+	margin: 0 auto;
+}
+#container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#scrollBar {
+	font-size: 4.5em;
+	padding-left: 3.5%;
+	line-height: 80%;
+	color: #e23a28;
+
+}
+
+#gameBoard {
+	width: 55%;
+	margin: 0 auto;
+	float: left;
+}
+
+.teamName {
+	margin: 0px;
+	float: left;
+    width: 22.5%;
+    padding-top: 15%;
+    font-family: 'Kanit', sans-serif;
+    text-transform: uppercase;
+    font-size: 250%;
+    line-height: 80%;
+    
+}
+#restart {
+	position: absolute;
+	bottom: 0;
+	right: 15px;
+	font-size: 40%;
+	color: #0a4e56;
+	cursor: pointer;
+
+}
+.hide {
+	visibility: hidden;
+}
+
+.redText {
+	color: #e23a28;
+	text-align: left;
+	display: block;
+	float: none;
+	text-shadow: 2px 1px #5b3f3c;
+}
+
+.yellowText {
+	color: #FEDC32;
+	text-align: right;
+	display: block;
+	float: none;
+	text-shadow: 2px 1px #595757;
+
+}
+
+.circle {
+	width: 11%;
+	padding-bottom: 11%;
+	float: left;
+	margin: 0 1.64% 2% 1.64%;
+	border-radius: 50%;
+	background-color: #FFFFFF;
+}
+
+.red {
+	background-color: #e23a28;
+}
+
+.yellow {
+	background-color: #FEDC32;
+}
