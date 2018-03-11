@@ -118,12 +118,6 @@ function scroll() {
 			dropDisc(currPlayer, scrollPos);
 		}
 	}
-	this.onmousedown = function(event){
-			var x = event.clientX - document.getElementById("gameBoard").offsetLeft;
-		    var width = document.getElementById("gameBoard").offsetWidth/7;
-		    var scrollPos = ~~(x/width);
-			dropDisc(currPlayer, scrollPos);
-		}
 };
 
 document.getElementById("restart").onmousedown = function(){
